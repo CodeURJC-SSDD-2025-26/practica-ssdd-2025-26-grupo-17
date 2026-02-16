@@ -137,11 +137,11 @@ Diagrama que muestra cómo se navega entre las diferentes páginas de la aplicac
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
-|1| Logic and information of the Admin site(URL_commit_1)  | [Archivo1]([URL_archivo_1](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/83bafd366713cc6597a15f34ea86a683bd7eae36))   |
-|2| Creation of the login/register website (URL_commit_2)  | [Archivo2]([URL_archivo_2](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/9f0885944270a84acc3eca7f3775d63e74cb4590))   |
-|3| Creation of the administrator site(URL_commit_3)  | [Archivo3]([URL_archivo_3](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/613d0e9d6a466d894902696ca090158406452617))   |
-|4| Creation of a new class (URL_commit_4)  | [Archivo4]([URL_archivo_4](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/8b3028994af805fffdb92fcaf20677b845d888b2))   |
-|5| Finished profile site (URL_commit_5)  | [Archivo5][URL_commit_5](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/568ecccdef1dff2f81983820f24f605c53b1d91d))   |
+|1| Logic and information of the Admin site  | [URL_archivo_1](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/83bafd366713cc6597a15f34ea86a683bd7eae36)  |
+|2| Creation of the login/register website   | [URL_archivo_2](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/9f0885944270a84acc3eca7f3775d63e74cb4590)   |
+|3| Creation of the administrator site  |[URL_archivo_3](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/613d0e9d6a466d894902696ca090158406452617)   |
+|4| Creation of a new class   | [URL_archivo_4](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/8b3028994af805fffdb92fcaf20677b845d888b2)   |
+|5| Finished profile site   | [URL_commit_5](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/568ecccdef1dff2f81983820f24f605c53b1d91d)   |
 
 ---
 
