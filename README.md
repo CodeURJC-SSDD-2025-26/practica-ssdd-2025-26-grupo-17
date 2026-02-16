@@ -1,110 +1,147 @@
-# [Nombre de la Aplicación]
+# NEXGYM
 
 ## 👥 Miembros del Equipo
 | Nombre y Apellidos | Correo URJC | Usuario GitHub |
 |:--- |:--- |:--- |
-| [Nombre 1] | [email1]@alumnos.urjc.es | [User1] |
-| [Nombre 2] | [email2]@alumnos.urjc.es | [User2] |
-| [Nombre 3] | [email3]@alumnos.urjc.es | [User3] |
-| [Nombre 4] | [email4]@alumnos.urjc.es | [User4] |
+| Delia Martínez López | d.martinezl.2022@alumnos.urjc.es | deliaml10 |
+| Rubén Ruiz Martín | r.ruizm.2023@alumnos.urjc.es | ruben730 |
+| Rodrigo Fernández de Córdoba García | r.fernandezgar.2023@alumnos.urjc.es | RodrigoFDCG |
 
 ---
 
-## 🎭 **Preparación: Definición del Proyecto**
+## 🎭 **Preparación 1: Definición del Proyecto**
 
 ### **Descripción del Tema**
-[Escribe aquí una descripción breve y concisa de qué trata tu aplicación, el sector al que pertenece y qué valor aporta al usuario].
+Aplicación web del sector fitness destinada a la gestión de un gimnasio. Permite a los usuarios registrarse, consultar clases y horarios e inscribirse en actividades, mientras que el gimnasio puede organizar su oferta y controlar aforos. Aporta una gestión más eficiente y una experiencia más cómoda para los usuarios.
+
 
 ### **Entidades**
 Indicar las entidades principales que gestionará la aplicación y las relaciones entre ellas:
 
-1. **[Entidad 1]**: [Ej: Usuario]
-2. **[Entidad 2]**: [Ej: Producto]
-3. **[Entidad 3]**: [Ej: Pedido]
-4. **[Entidad 4]**: [Ej: Categoría]
+1. **Entidad 1**: Usuarios
+2. **Entidad 2**: Comentarios de las clases 
+3. **Entidad 3**: Sesión de clase 
+4. **Entidad 4**: Clases 
 
 **Relaciones entre entidades:**
-- [Ej: Usuario - Pedido: Un usuario puede tener múltiples pedidos (1:N)]
-- [Ej: Pedido - Producto: Un pedido puede contener múltiples productos y un producto puede estar en múltiples pedidos (N:M)]
-- [Ej: Producto - Categoría: Un producto pertenece a una categoría (N:1)]
-- [Descripción de otras relaciones relevantes]
+- Usuario - Sesión: un usuario puede asistir a varias sesiones y a una sesión pueden asistir varios usuarios. (N:M)
+- Clase - Sesiones: una clase puede tener varias sesiones, pero una sesión solo puede pertenecer a una clase. (1:N)
+- Clase - Comentario: un comentario pertenece a una clase, pero una clase puede tener varios comentarios. (1:N)
+- Usuario - Comentario: un usuario puede hacer tantos comentarios como quiera, pero un comentario pertenece a un usuario. (1:N)
 
 ### **Permisos de los Usuarios**
 Describir los permisos de cada tipo de usuario e indicar de qué entidades es dueño:
 
 * **Usuario Anónimo**: 
-  - Permisos: [Ej: Visualización de catálogo, búsqueda de productos, registro]
+  - Permisos: visualizar la información pública del gimnasio, consultar las clases y horarios disponibles en cada gimnasio y registrarse/iniciar sesión en la plataforma. 
   - No es dueño de ninguna entidad
 
 * **Usuario Registrado**: 
-  - Permisos: [Ej: Gestión de perfil, realizar pedidos, crear valoraciones]
-  - Es dueño de: [Ej: Sus propios Pedidos, su Perfil de Usuario, sus Valoraciones]
+  - Permisos: gestionar su perfil personal, incribirse y cancelar de una sesión, concultar los horarios de las clases a las que se ha apuntado y visualizar el gimnasio al que pertenece. 
+  - Es dueño de: su perfil de usuario, sus comentarios de las clases. 
 
 * **Administrador**: 
-  - Permisos: [Ej: Gestión completa de productos (CRUD), visualización de estadísticas, moderación de contenido]
-  - Es dueño de: [Ej: Productos, Categorías, puede gestionar todos los Pedidos y Usuarios]
+  - Permisos: gestión completa usuarios, clases, sesiones y comentarios. 
+  - Es dueño de: clases y sesiones.
 
 ### **Imágenes**
 Indicar qué entidades tendrán asociadas una o varias imágenes:
 
-- **[Entidad con imágenes 1]**: [Ej: Usuario - Una imagen de avatar por usuario]
-- **[Entidad con imágenes 2]**: [Ej: Producto - Múltiples imágenes por producto (galería)]
-- **[Entidad con imágenes 3]**: [Ej: Categoría - Una imagen representativa por categoría]
+- **[Entidad con imágenes 1]**: Usuario: imagen de perfil.
+- **[Entidad con imágenes 2]**: Clases: carrusel de imágenes de la actividad que se realiza en la clase. 
 
 ### **Gráficos**
 Indicar qué información se mostrará usando gráficos y de qué tipo serán:
 
-- **Gráfico 1**: [Ej: Ventas mensuales - Gráfico de barras]
-- **Gráfico 2**: [Ej: Productos más vendidos - Gráfico de tarta/circular]
-- **Gráfico 3**: [Ej: Evolución de usuarios registrados - Gráfico de líneas]
-- **Gráfico 4**: [Ej: Distribución de pedidos por categoría - Gráfico de barras horizontales]
+- **Gráfico 1**: Cantidad de usuarios apuntados a una clase según el horario - gráfico de barras.
+- **Gráfico 2**: Clases atendidas por mes de un usuario - gráfico de barras. 
 
 ### **Tecnología Complementaria**
 Indicar qué tecnología complementaria se empleará:
 
-- [Ej: Envío de correos electrónicos automáticos mediante JavaMailSender]
-- [Ej: Generación de PDFs de facturas usando iText o similar]
+- Mapa con la localización del gimnasio.
+- Envío de un correo de confirmación de cuenta al usuario tras registrarse en la plataforma.
+- Envío de un correo de confirmación al usuario tras apuntarse a una sesión.  
+
 
 ### **Algoritmo o Consulta Avanzada**
 Indicar cuál será el algoritmo o consulta avanzada que se implementará:
 
-- **Algoritmo/Consulta**: [Ej: Sistema de recomendaciones basado en el historial de compras del usuario]
-- **Descripción**: [Ej: Analiza los productos comprados previamente y sugiere productos similares o complementarios utilizando filtrado colaborativo]
-- **Alternativa**: [Ej: Consulta compleja que agrupe ventas por categoría, mes y región, con cálculo de tendencias]
+* **Algoritmo/Consulta**: Detección de solapamientos de clases. 
+   - **Descripción**: El usuario no podrá reservar dos clases distintas en el mismo horario. 
+
+
+* **Algoritmo/Consulta**: Creación automática de sesiones.  
+   - **Descripción**: Cuando el administrador crea una clase, se tienen que guardar las sesiones de esa clase para un año. 
+
+
+* **Algoritmo/Consulta**: Sugerir clases en función de la hora a la que suele ir un usuario.
+   - **Descripción**: Los usuarios podrán ver sugerencias de distintas clases en función de la hora a la que suelen reservar. 
 
 ---
-
 ## 🛠 **Práctica 1: Maquetación de páginas web con HTML y CSS**
 
 ### **Diagrama de Navegación**
 Diagrama que muestra cómo se navega entre las diferentes páginas de la aplicación:
 
-![Diagrama de Navegación](images/navigation-diagram.png)
+![Diagrama de Navegación](images/Diagrama_pasos.png)
 
-> [Descripción opcional del flujo de navegación: Ej: "El usuario puede acceder desde la página principal a todas las secciones mediante el menú de navegación. Los usuarios anónimos solo tienen acceso a las páginas públicas, mientras que los registrados pueden acceder a su perfil y panel de usuario."]
+> Todos los usuarios entran a la página principal, desde donde pueden ver la información de las clases, iniciar sesión, registrarse en la web rellenando un formulario y haciendo el pago. 
+> Los usuarios registrados, una vez han hecho el inicio de sesión, pueden acceder a su página de perfil, donde pueden ver las estadísticas de las clases a las que han ido, las clases a las que están apuntados, todas las clases que hay en el gimnasio y una fila de sugerencias de clases a las que pueden apuntarse. Desde esta página pueden acceder a la página de clase (desde donde se apuntarán y podrán ver los comentarios) y a su página de configuración, donde pueden cambiar la información que hay guardada sobre ellos.
+> Un administrador, una vez ha iniciado sesión, se le redirige a la página de administrador donde puede ver información y estadísticas de todo el gimnasio. En la sección de usuarios podrá ver una tabla de todos los usuarios que hay registrados en el gimnasio, podrá ver sus perfiles, editarlos y borrarlos. En la sección de clases podrá ver, editar y borrar las clases. En la sección de horarios, podrá editar o borrar el horario de una clase. También podrá ver estadísticas generales de cada clase en la sección de estadísticas. 
 
 ### **Capturas de Pantalla y Descripción de Páginas**
 
-#### **1. Página Principal / Home**
-![Página Principal](images/home-page.png)
+### **Capturas de Pantalla y Descripción de Páginas**
 
-> [Descripción breve: Ej: "Página de inicio que muestra los productos destacados, categorías principales y un banner promocional. Incluye barra de navegación y acceso a registro/login para usuarios no autenticados."]
+#### 1. Página Principal
+![Página Principal](images/pagina_principal.png)
+> Página de inicio desde la que se puede acceder a la página de iniciar sesión/registrarse, ver las clases disponibles (y su información) , información general sobre el ginmasio y un mapa de su ubicación. 
 
-#### **AQUÍ AÑADIR EL RESTO DE PÁGINAS**
+#### 2. Log-in / Registro
+![Log-in/Registro](images/login.png)
+> Página de registro / inicio de sesión donde los usuarios pueden rellenar un formulario y acceder a las funciones de la página. 
 
+#### 3. Perfil usuario
+![Perfil usuario](images/perfil_usuario.png)
+> Página de perfil de usuario donde un usuario puede ver sus estadísticas, las clases a las que está apuntado, sugerencias de clases, todas las clases que hay en el gimnasio y acceder a las páginas de clase y editar perfil. 
+
+#### 4. Página administrador
+![Página administrador](images/pagina_admin.png)
+> Página de administrador desde donde un usuario administrador puede ver los datos del gimnasio (usuarios apuntados, clases disponibles, horario de cada clase y estadísticas), modificarlos y borrarlos; además de crear clases u horarios. También puede acceder a su perfil o cerrar sesión. 
+
+#### 5. Perfil administrador 
+![Perfil administrador](images/perfil_admin.png)
+> Página de perfil de administrador donde se encuentra un formulario para que el administrador pueda cambiar los datos asociados a su cuenta. 
+
+#### 6. Pagina de pago 
+![Página Pde pago](images/pagina_pago.png)
+> Página de pago en la que un usuario puede rellenar el formulario sobre los datos de su tarjeta para pagar la suscripción del gimnasio. 
+
+#### 7. Pagina de error 
+![Página de error](images/error.png)
+> Página de error que se muestra cuando el usuario no ha podido realizar correctamente el pago o intenta acceder a algún apartado al que no esta autorizado. 
+
+#### 8. Pagina de clase 
+![Página de clase](images/pagina_clase.png)
+> Página de clase en la que se puede ver la información de una clase (breve descripción, aforo, entrenador y sesiones disponibles). Además, hay un apartado de comentarios que dejan los propios usuarios sobre la clase. 
+
+#### 9. Página de nueva clase / editar clase 
+![Página de nueva clase](images/new_edit_class.png)
+> Página para añadir o editar clases a la que solo tiene acceso un administrador. Aquí podrá crear una nueva clase o (si accede desde el botón de editar clase o editar horario) podrá mofidicar la información que ya existe de una clase concreta. 
 ### **Participación de Miembros en la Práctica 1**
 
-#### **Alumno 1 - [Nombre Completo]**
+#### **Alumno 1 - Delia Martínez López**
 
 [Descripción de las tareas y responsabilidades principales del alumno en el proyecto]
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
-|1| [Descripción commit 1](URL_commit_1)  | [Archivo1](URL_archivo_1)   |
-|2| [Descripción commit 2](URL_commit_2)  | [Archivo2](URL_archivo_2)   |
-|3| [Descripción commit 3](URL_commit_3)  | [Archivo3](URL_archivo_3)   |
-|4| [Descripción commit 4](URL_commit_4)  | [Archivo4](URL_archivo_4)   |
-|5| [Descripción commit 5](URL_commit_5)  | [Archivo5](URL_archivo_5)   |
+|1| Logic and information of the Admin site(URL_commit_1)  | [Archivo1]([URL_archivo_1](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/83bafd366713cc6597a15f34ea86a683bd7eae36))   |
+|2| Creation of the login/register website (URL_commit_2)  | [Archivo2]([URL_archivo_2](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/9f0885944270a84acc3eca7f3775d63e74cb4590))   |
+|3| Creation of the administrator site(URL_commit_3)  | [Archivo3]([URL_archivo_3](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/613d0e9d6a466d894902696ca090158406452617))   |
+|4| Creation of a new class (URL_commit_4)  | [Archivo4]([URL_archivo_4](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/8b3028994af805fffdb92fcaf20677b845d888b2))   |
+|5| Finished profile site (URL_commit_5)  | [Archivo5][URL_commit_5](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/568ecccdef1dff2f81983820f24f605c53b1d91d))   |
 
 ---
 
@@ -136,19 +173,6 @@ Diagrama que muestra cómo se navega entre las diferentes páginas de la aplicac
 
 ---
 
-#### **Alumno 4 - [Nombre Completo]**
-
-[Descripción de las tareas y responsabilidades principales del alumno en el proyecto]
-
-| Nº    | Commits      | Files      |
-|:------------: |:------------:| :------------:|
-|1| [Descripción commit 1](URL_commit_1)  | [Archivo1](URL_archivo_1)   |
-|2| [Descripción commit 2](URL_commit_2)  | [Archivo2](URL_archivo_2)   |
-|3| [Descripción commit 3](URL_commit_3)  | [Archivo3](URL_archivo_3)   |
-|4| [Descripción commit 4](URL_commit_4)  | [Archivo4](URL_archivo_4)   |
-|5| [Descripción commit 5](URL_commit_5)  | [Archivo5](URL_archivo_5)   |
-
----
 
 ## 🛠 **Práctica 2: Web con HTML generado en servidor**
 
