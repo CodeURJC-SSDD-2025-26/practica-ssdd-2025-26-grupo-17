@@ -151,11 +151,11 @@ He realizado la implementación de la página de inicio de sesión / registro, l
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
-|1| Creation of the class page (HTML, CSS) | [URL_commit_1]([URL_archivo_1](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/7fdc7d18bcf58870e1301e3cffd48cb53136165b#diff-182b27b78e79493cae10e5617c7d775b441aa85e0a24c6940938a8d49eeac3f1))   |
-|2| Creation of the index (main) website (HTML, CSS) | [URL_commit_2]([URL_archivo_2](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/f0797e1a8c9bf3fb8de4235abb5a149611d60037))   |
-|3| Creation of the carousel of images of class page (HTML, CSS, JS) | [URL_commit_3]([URL_archivo_3](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/69c3ce510761de30bc31d5cec36a3a66da9f41d9))   |
+|1| Creation of the class page (HTML, CSS) | [URL_commit_1](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/7fdc7d18bcf58870e1301e3cffd48cb53136165b#diff-182b27b78e79493cae10e5617c7d775b441aa85e0a24c6940938a8d49eeac3f1)   |
+|2| Creation of the index (main) website (HTML, CSS) | [URL_commit_2]([URL_archivo_2](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/f0797e1a8c9bf3fb8de4235abb5a149611d60037)   |
+|3| Creation of the carousel of images of class page (HTML, CSS, JS) | [URL_commit_3](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/69c3ce510761de30bc31d5cec36a3a66da9f41d9)   |
 |4| Creation of the payment page (HTML, CSS) | [URL_commit_4](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/f22eb92e3a1d8a80fc3764e58411bacf53881d53)   |
-|5| Changes for responsiveness in index page | [URL_commit_5]([URL_archivo_5](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/578f2db6d664334e34e9b64adc044a04adce67a2#diff-c4b028e49bbffb4c84bcdf62d72799492e34bef674b38728c5bc23be37765d3d))   |
+|5| Changes for responsiveness in index page | [URL_commit_5](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/578f2db6d664334e34e9b64adc044a04adce67a2#diff-c4b028e49bbffb4c84bcdf62d72799492e34bef674b38728c5bc23be37765d3d)   |
 
 ---
 
