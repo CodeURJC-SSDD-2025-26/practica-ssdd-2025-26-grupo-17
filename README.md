@@ -133,7 +133,7 @@ Diagrama que muestra cómo se navega entre las diferentes páginas de la aplicac
 
 #### **Alumno 1 - Delia Martínez López**
 
-[Descripción de las tareas y responsabilidades principales del alumno en el proyecto]
+He realizado la implementación de la página de inicio de sesión / registro, la página de administrador y la de creación / modificación de clases, con todos sus estilos y funcionalidades de javaScript. 
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
