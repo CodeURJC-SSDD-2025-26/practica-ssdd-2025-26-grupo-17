@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User Profile</title>
+    <!-- Favicon-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../static/assets/images/icono.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="../static/styles/profileAdminCSS.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/styles/footerCSS.css" />
+    <link rel="stylesheet" href="../static/styles/headerCSS.css" />
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="../static/assets/images/Without_back_logo.png"
+            alt="Nexgym" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" onclick="window.location.href = 'profile.html'"
+                >Profile Page</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="window.location.href = 'index.html'"
+                >Log out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="profile-admin container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-4">
+          <div class="profile-card text-center">
+            <img
+              src="../static/assets/images/personal-trainer-2.png"
+              alt="User profile"
+              class="profile-image" />
+            <h2 class="profile-name">User account</h2>
+            <p class="profile-role">Primary account</p>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="form-card">
+            <div class="form-header">
+              <h2>Edit profile</h2>
+              <p>Update the details below.</p>
+            </div>
+
+            <form class="row g-3" method="post" action="./profile.html">
+              <div class="col-md-6">
+                <label class="form-label" for="admin-name">First name</label>
+                <input
+                  class="form-control"
+                  id="admin-name"
+                  type="text"
+                  placeholder="First name"
+                  value="Avery" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="admin-surname">Last name</label>
+                <input
+                  class="form-control"
+                  id="admin-surname"
+                  type="text"
+                  placeholder="Last name"
+                  value="Foster" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="admin-email">Email</label>
+                <input
+                  class="form-control"
+                  id="admin-email"
+                  type="email"
+                  placeholder="admin@nexgym.com"
+                  value="admin@nexgym.com" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="admin-phone">Phone</label>
+                <input
+                  class="form-control"
+                  id="admin-phone"
+                  type="tel"
+                  placeholder="+34 600 000 000"
+                  value="+34 612 345 678" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="admin-birth">Birth date</label>
+                <input
+                  class="form-control"
+                  id="admin-birth"
+                  type="date"
+                  value="1992-06-18" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="admin-photo"
+                  >Profile photo</label
+                >
+                <div class="file-upload">
+                  <input
+                    class="visually-hidden"
+                    id="admin-photo"
+                    type="file"
+                    accept="image/*" />
+                  <label class="file-button" for="admin-photo"
+                    >Select file</label
+                  >
+                  <span class="file-name">No file selected</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="admin-password">Change Password</label>
+                <input
+                  class="form-control"
+                  id="admin-password"
+                  type="password"
+                  placeholder="Enter your new password" />
+              </div>
+
+              <div class="col-12 form-actions">
+                <button class="btn btn-primary" type="submit">
+                  Save changes
+                </button>
+                <a class="btn btn-danger" type="button" href="./error.html">
+                  Delete account
+                </a>
+                <button class="btn btn-outline-light" type="reset">
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer py-0 bg-black text-white border-top border-dark">
+      <div class="container-fluid px-md-5">
+        <div class="row align-items-center m-0 g-0" style="min-height: 50px">
+          <div class="col-lg-3 text-center text-lg-start py-1">
+            <img
+              src="../static/assets/images/Without_back_logo.png"
+              alt="NexGym Logo"
+              class="footer-logo-img"
+              onclick="window.location = 'index.html'"
+              style="height: 50px" />
+            <span class="social-links ms-2">
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location"
+                ="https://www.instagram.com"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location"
+                ="https://twitter.com"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location"
+                ="https://www.facebook.com"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </span>
+          </div>
+
+          <div class="col-lg-6 py-1">
+            <div class="d-flex justify-content-center flex-wrap footer-links">
+              <a href="#faq" class="mx-2 my-0 small text-decoration-none"
+                >FAQ</a
+              >
+              <a href="#contact" class="mx-2 my-0 small text-decoration-none"
+                >Contact</a
+              >
+              <a href="#privacy" class="mx-2 my-0 small text-decoration-none"
+                >Privacy</a
+              >
+              <a href="#terms" class="mx-2 my-0 small text-decoration-none"
+                >Terms</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 text-center text-lg-end py-1">
+            <p class="text-light mb-0" style="font-size: 0.7rem">
+              © 2026 NEXGYM.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.page {
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  color: #eee;
+  background-image: url("../assets/images/gym-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+body.page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 0;
+}
+
+body.page > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* MAIN */
+main.container {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+/* PROFILE & SESSION CARDS */
+.session-card {
+  background-color: rgba(0, 0, 0, 0.82);
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* PROFILE IMAGE */
+.img-circle {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fbcc23;
+}
+
+/* CLASS CARDS */
+.class-card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 2px solid #fbcc23;
+  transition: all 0.25s ease;
+  margin-bottom: 20px;
+}
+
+.class-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 20px rgba(255, 255, 0, 0.12);
+}
+
+.class-card-body {
+  padding: 20px;
+}
+
+.class-card-title {
+  color: #222;
+  font-weight: 700;
+}
+
+.class-card-text {
+  color: #222;
+}
+.badge {
+  color: #0f0f0f;
+}
+.class-schedule {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444;
+  border-top: 2px solid #fbcc23;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+
+/* CARD LINK (NO UNDERLINE) */
+.class-card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.class-card-link * {
+  text-decoration: none !important;
+}
+
+/* ADMIN BUTTON */
+.btn_admin {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fbcc23;
+  color: #000;
+  border: none;
+  padding: 10px 22px;
+  font-weight: 700;
+  z-index: 2000;
+}

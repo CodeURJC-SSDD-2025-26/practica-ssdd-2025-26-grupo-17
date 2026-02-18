@@ -1,0 +1,139 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+  margin-top: 60px;
+  border-top: 1px solid #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-logo-img {
+  max-width: 150px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column a {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  color: #888;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    gap: 20px;
+  }
+
+  .footer-column {
+    min-width: 150px;
+  }
+
+  .footer-column h3 {
+    font-size: 16px;
+  }
+
+  .footer-column a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 15px 15px 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-logo {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo-img {
+    max-width: 120px;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-column h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .footer-column a {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+}
+.footer-links a {
+  color: #6c757d;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer-links a:hover {
+  color: #866d10;
+}

@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Nexgym</title>
+    <!-- Favicon-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../static/assets/images/icono.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../static/styles/indexCSS.css" rel="stylesheet" />
+    <link href="../static/styles/footerCSS.css" rel="stylesheet" />
+    <link href="../static/styles/headerCSS.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top"
+          ><img src="../static/assets/images/Without_back_logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#info">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#location">Location</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#classes">Classes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Log in/ Register section -->
+    <section class="login" id="login">
+      <div class="container">
+        <div class="container-card">
+          <div class="login-subheading">Welcome To Nexgym!</div>
+          <div class="login-heading">The next evolution of fitness</div>
+          <a
+            class="btn btn-xl"
+            onclick="window.location = 'login.html?mode=login'"
+            >Log in</a
+          >
+          <p class="register-text">
+            Want to join us?:
+            <a
+              class="btn btn-sm"
+              onclick="window.location = 'login.html?mode=register'"
+              >Sign up</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gym Info -->
+    <section class="page-section" id="info">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Elevate Your Performance at Nexgym.
+          </h2>
+          <h4 class="section-subheading text-muted">
+            More than just a gym, we are a high-performance community. Our
+            mission is to empower our members through expert guidance, diverse
+            class offerings, and a supportive atmosphere that fuels ambition.
+            Join Nexgym today and experience a world-class facility where every
+            workout brings you closer to your goals.
+          </h4>
+        </div>
+        <div class="carousel-section">
+          <div id="carousel" class="row g-3"></div>
+
+          <div class="container mt-5">
+            <div class="row g-4">
+              <div class="col-4">
+                <img
+                  src="../static/assets/images/im1-gym.jpg"
+                  class="img-fluid rounded shadow-sm custom-img"
+                  alt="Image 1" />
+              </div>
+              <div class="col-4">
+                <img
+                  src="../static/assets/images/im2-gym.jpg"
+                  class="img-fluid rounded shadow-sm custom-img"
+                  alt="Image 2" />
+              </div>
+              <div class="col-4">
+                <img
+                  src="../static/assets/images/im3-gym.jpg"
+                  class="img-fluid rounded shadow-sm custom-img"
+                  alt="Image 3" />
+              </div>
+
+              <div class="col-4">
+                <img
+                  src="../static/assets/images/im4-gym.jpg"
+                  class="img-fluid rounded shadow-sm custom-img"
+                  alt="Image 4" />
+              </div>
+              <div class="col-4">
+                <img
+                  src="../static/assets/images/im5-gym.jpg"
+                  class="img-fluid rounded shadow-sm custom-img"
+                  alt="Image 5" />
+              </div>
+              <div class="col-4">
+                <img
+                  src="../static/assets/images/im6-gym.jpg"
+                  class="img-fluid rounded shadow-sm custom-img"
+                  alt="Image 6" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="d-flex justify-content-center align-items-center"
+            style="height: 100px">
+            <button id="loadMore" class="btn" style="color: white">
+              Load more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map section -->
+    <section
+      class="page-section py-5"
+      style="background-color: #1f3a4a"
+      id="location">
+      <div class="container">
+        <div class="map-title">
+          <h2 class="section-heading text-uppercase text-white">
+            Our location
+          </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-sm-8">
+            <div class="ratio ratio-16x9 shadow rounded">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d759.3466945127647!2d-3.680900257774895!3d40.42243368734642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422930cacfed61%3A0x9cff011cbd1a7d20!2sRuk%20Gym%20Madrid!5e0!3m2!1ses!2ses!4v1770240772630!5m2!1ses!2ses"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section
+      class="team-section py-5 min-vh-100 d-flex align-items-center"
+      id="team">
+      <div class="container-fluid px-md-5">
+        <h2 class="section-heading text-uppercase">Our team</h2>
+
+        <div class="row g-5 text-center justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="p-4">
+              <img
+                src="../static/assets/images/personal-trainer-1.png"
+                class="rounded-circle mb-4 shadow team-img-xl"
+                alt="Person 1" />
+              <h3 class="display-7 fw-bold">John Parker</h3>
+              <p class="lead text-muted">
+                "Specializing in body transformation through heavy lifting and
+                unwavering discipline. He believes that true strength is forged
+                in the mind before it ever reaches the muscles, making him the
+                perfect guide for those looking to break personal records and
+                build solid muscle mass."
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="p-4">
+              <img
+                src="../static/assets/images/personal-trainer-2.png"
+                class="rounded-circle mb-4 shadow team-img-xl"
+                alt="Person 2" />
+              <h3 class="display-7 fw-bold">Mary Carter</h3>
+              <p class="lead text-muted">
+                "Mary blends functional intensity with the fluidity of yoga to
+                champion the concept of 'Smart Movement.' Her approach focuses
+                on improving posture and flexibility, ensuring your body
+                performs at its peak without pain, while cultivating a
+                rock-solid core and a balanced, focused mind."
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="p-4">
+              <img
+                src="../static/assets/images/personal-trainer-3.png"
+                class="rounded-circle mb-4 shadow team-img-xl"
+                alt="Person 3" />
+              <h3 class="display-7 fw-bold">Charles Reed</h3>
+              <p class="lead text-muted">
+                "A former high-performance athlete, Carlos is the master of
+                efficiency. His high-intensity interval sessions are
+                strategically designed to torch fat and boost cardiovascular
+                stamina in record time, coaching you to move with the speed,
+                agility, and precision of a professional athlete."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classes section -->
+    <section class="classes-section py-5" id="classes">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-heading text-uppercase">Our Classes</h2>
+          <h3>Discover the perfect discipline to match your fitness goals.</h3>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3">
+                  <span class="badge bg-danger">High Intensity</span>
+                  <span class="text-muted small">45 min</span>
+                </div>
+                <h4 class="card-title fw-bold">HIIT Training</h4>
+                <a href="class.html">
+                  <img
+                    src="../static/assets/images/hiit-training-im.jpg"
+                    alt="HIIT Training"
+                    class="class-card-image" />
+                </a>
+                <p class="card-text text-muted">
+                  High-Intensity Interval Training designed to torch fat and
+                  boost your cardiovascular stamina in record time.
+                </p>
+                <hr />
+                <p class="mb-0 small">
+                  <strong>Focus:</strong> Fat loss and power.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3">
+                  <span class="badge bg-dark">Strength</span>
+                  <span class="text-muted small">60 min</span>
+                </div>
+                <h4 class="card-title fw-bold">Power Lifting</h4>
+                <a href="class.html">
+                  <img
+                    src="../static/assets/images/powerlifting-training-im.jpg"
+                    alt="Power Lifting"
+                    class="class-card-image" />
+                </a>
+                <p class="card-text text-muted">
+                  Master the big three lifts: Squat, Bench Press, and Deadlift.
+                  Perfect for those seeking raw strength and flawless technique.
+                </p>
+                <hr />
+                <p class="mb-0 small">
+                  <strong>Focus:</strong> Max strength and technique.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3">
+                  <span class="badge bg-success">Low Intensity</span>
+                  <span class="text-muted small">50 min</span>
+                </div>
+                <h4 class="card-title fw-bold">Yoga & Flow</h4>
+                <a href="class.html">
+                  <img
+                    src="../static/assets/images/yoga-training-im.jpg"
+                    alt="Yoga & Flow"
+                    class="class-card-image" />
+                </a>
+                <p class="card-text text-muted">
+                  Connect body and mind through breath and movement. Improve
+                  your flexibility, balance, and reduce daily stress.
+                </p>
+                <hr />
+                <p class="mb-0 small">
+                  <strong>Focus:</strong> Flexibility and well-being.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3">
+                  <span class="badge bg-warning text-dark">Medium-High</span>
+                  <span class="text-muted small">45 min</span>
+                </div>
+                <h4 class="card-title fw-bold">Indoor Cycling</h4>
+                <a href="class.html">
+                  <img
+                    src="../static/assets/images/cycling-training-im.jpg"
+                    alt="Indoor Cycling"
+                    class="class-card-image" />
+                </a>
+                <p class="card-text text-muted">
+                  Get on the bike and get lost in the music. An explosive
+                  session to strengthen legs and boost your heart health.
+                </p>
+                <hr />
+                <p class="mb-0 small">
+                  <strong>Focus:</strong> Endurance and energy.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3">
+                  <span class="badge bg-danger">High Intensity</span>
+                  <span class="text-muted small">60 min</span>
+                </div>
+                <h4 class="card-title fw-bold">Box Fitness</h4>
+                <a href="class.html">
+                  <img
+                    src="../static/assets/images/box-training-im.jpg"
+                    alt="Box Fitness"
+                    class="class-card-image" />
+                </a>
+                <p class="card-text text-muted">
+                  Release tension and learn striking techniques while performing
+                  a full-body workout focused on coordination and agility.
+                </p>
+                <hr />
+                <p class="mb-0 small">
+                  <strong>Focus:</strong> Cardio and self-defense.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3">
+                  <span class="badge bg-info">Medium Intensity</span>
+                  <span class="text-muted small">55 min</span>
+                </div>
+                <h4 class="card-title fw-bold">Pilates</h4>
+                <a href="class.html">
+                  <img
+                    src="../static/assets/images/pilates-training-im.jpg"
+                    alt="Pilates"
+                    class="class-card-image" />
+                </a>
+                <p class="card-text text-muted">
+                  Strengthen your core and improve your posture. A
+                  precision-based workout focusing on muscle control and spinal
+                  stability.
+                </p>
+                <hr />
+                <p class="mb-0 small">
+                  <strong>Focus:</strong> Core and postural correction.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer py-0 bg-black text-white border-top border-dark">
+      <div class="container-fluid px-md-5">
+        <div class="row align-items-center m-0 g-0" style="min-height: 100px">
+          <div class="col-lg-3 text-center text-lg-start py-1">
+            <img
+              src="../static/assets/images/Without_back_logo.png"
+              alt="NexGym Logo"
+              class="footer-logo-img"
+              style="height: 50px" />
+            <span class="social-links ms-2">
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location"
+                ="https://www.instagram.com"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location"
+                ="https://twitter.com"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location"
+                ="https://www.facebook.com"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </span>
+          </div>
+
+          <div class="col-lg-6 py-1">
+            <div class="d-flex justify-content-center flex-wrap footer-links">
+              <a href="#faq" class="mx-2 my-0 small text-decoration-none"
+                >FAQ</a
+              >
+              <a href="#contact" class="mx-2 my-0 small text-decoration-none"
+                >Contact</a
+              >
+              <a href="#privacy" class="mx-2 my-0 small text-decoration-none"
+                >Privacy</a
+              >
+              <a href="#terms" class="mx-2 my-0 small text-decoration-none"
+                >Terms</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 text-center text-lg-end py-1">
+            <p class="text-light mb-0" style="font-size: 0.7rem">
+              © 2026 NEXGYM.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
+</html>

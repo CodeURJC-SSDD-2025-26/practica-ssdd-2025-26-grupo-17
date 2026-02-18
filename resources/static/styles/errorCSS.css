@@ -1,0 +1,120 @@
+/* ===== GLOBAL ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+/* ===== ERROR PAGE BACKGROUND ===== */
+body.error-page {
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  color: #fff;
+
+  background-image: url("../assets/images/Error-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Overlay oscuro */
+body.error-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+body.error-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== CENTER ERROR CONTENT ===== */
+.error-content {
+  padding-top: 85px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.error-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.error-content::before {
+  content: "";
+  position: absolute;
+  width: min(900px, calc(100% - 32px));
+  height: auto;
+  inset: auto;
+}
+
+.error-content .btn {
+  font-weight: 700;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.error-content {
+  background: rgba(0, 0, 0, 0.82);
+  border-radius: 16px;
+  padding: 40px 28px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+  width: min(900px, calc(100% - 32px));
+}
+
+.error-content h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.error-content h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #e5e7eb;
+  margin-bottom: 24px;
+}
+
+.error-content .btn-primary {
+  background-color: #cda104;
+  border: none;
+  color: #fff;
+  padding: 0.9rem 2.2rem;
+}
+
+.error-content .btn-primary:hover,
+.error-content .btn-primary:focus {
+  background-color: #866d10;
+  color: #fff;
+  transform: translateY(-3px);
+}

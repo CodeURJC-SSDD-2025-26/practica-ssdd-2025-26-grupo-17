@@ -1,0 +1,121 @@
+/* === PAYMENT SECTION === */
+body {
+  background-color: #dfdfdf;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0 0 0;
+}
+
+.checkout-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+/* --- planning card --- */
+.plan-card {
+  border: none;
+  border-radius: 20px;
+  background: #0f0f0f;
+  color: white;
+}
+
+.plan-card .card-body {
+  padding: 2rem !important;
+}
+
+.plan-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #fbcc23;
+  margin: 10px 0;
+}
+
+.price span {
+  font-size: 1rem;
+  color: #888;
+}
+
+.features li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.features i {
+  color: #fbcc23;
+}
+
+/* --- Payment form --- */
+.payment-form-container {
+  border-radius: 20px;
+  padding: 2rem !important;
+}
+
+.payment-form-container h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem !important;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #444;
+  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+  background-color: #f8f9fa;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(251, 204, 35, 0.25);
+}
+
+.row.g-3 {
+  --bs-gutter-y: 0.7rem;
+}
+
+.btn {
+  border-radius: 12px;
+  border-style: none;
+  background-color: #fbcc23;
+  color: #000;
+  font-weight: 700;
+  padding: 0.7rem;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #cda104;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .checkout-container {
+    padding: 15px;
+    display: block;
+  }
+  .plan-card {
+    margin-bottom: 15px;
+  }
+}

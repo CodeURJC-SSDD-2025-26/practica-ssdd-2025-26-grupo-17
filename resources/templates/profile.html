@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Profile</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../static/assets/images/icono.ico" />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../static/styles/profileCSS.css" />
+    <link rel="stylesheet" href="../static/styles/footerCSS.css" />
+    <link rel="stylesheet" href="../static/styles/headerCSS.css" />
+
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body class="page">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">
+          <img src="../static/assets/images/Without_back_logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profileAdmin.html">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Log out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <!-- PROFILE + ACTIVITY -->
+      <div class="row">
+        <!-- PROFILE -->
+        <div class="col-md-4">
+          <div class="session-card text-center">
+            <img
+              src="../static/assets/images/personal-trainer-3.png"
+              class="img-circle mb-3"
+              alt="Profile" />
+            <h3>User example</h3>
+          </div>
+        </div>
+
+        <!-- ACTIVITY -->
+        <div class="col-md-8">
+          <div class="session-card">
+            <h3>Activity</h3>
+
+            <div class="row">
+              <div class="col-6 col-sm-4">
+                <p>Activity in the last month:</p>
+                <img
+                  src="../sample_images/14days.png"
+                  class="img-fluid"
+                  alt="" />
+              </div>
+
+              <div class="col-6 col-sm-4">
+                <p>Classes by day of the week:</p>
+                <img
+                  src="../sample_images/Weekday.png"
+                  class="img-fluid"
+                  alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CLASSES -->
+      <div class="row g-4 mt-4" id="classes">
+        <h2>Next classes:</h2>
+        <div class="col-md-6 col-lg-4">
+          <a href="./class.html" class="class-card-link">
+            <div class="class-card h-100">
+              <div class="class-card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="badge bg-danger">High Intensity</span>
+                  <span class="text-muted small">45 min</span>
+                </div>
+                <h4 class="class-card-title">Taekwondo classes</h4>
+                <p class="class-card-text">
+                  High intensity classes for competition level fighters
+                </p>
+                <p class="class-schedule">Date: 17/02/2026 15:30</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <a href="./class.html" class="class-card-link">
+            <div class="class-card h-100">
+              <div class="class-card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="badge bg-light">Low Intensity</span>
+                  <span class="text-muted small">30 min</span>
+                </div>
+                <h4 class="class-card-title">Yoga classes</h4>
+                <p class="class-card-text">
+                  Short relaxing classes to help relieve stress
+                </p>
+                <p class="class-schedule">Date: 24/02/2026 17:00</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- SUGGESTED CLASSES -->
+      <div class="row g-4 mt-4" id="suggested-classes">
+        <h2>Suggested classes:</h2>
+        <div class="col-md-6 col-lg-4">
+          <a href="./class.html" class="class-card-link">
+            <div class="class-card h-100">
+              <div class="class-card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="badge bg-danger">High Intensity</span>
+                  <span class="text-muted small">60 min</span>
+                </div>
+                <h4 class="class-card-title">CrossFit classes</h4>
+                <p class="class-card-text">
+                  Strength and conditioning workouts with dynamic circuits
+                </p>
+                <p class="class-schedule">Next session: 20/02/2026 18:00</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <a href="./class.html" class="class-card-link">
+            <div class="class-card h-100">
+              <div class="class-card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="badge bg-light">Low Intensity</span>
+                  <span class="text-muted small">40 min</span>
+                </div>
+                <h4 class="class-card-title">Pilates classes</h4>
+                <p class="class-card-text">
+                  Core-focused training to improve posture and flexibility
+                </p>
+                <p class="class-schedule">Next session: 22/02/2026 09:30</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <a href="./class.html" class="class-card-link">
+            <div class="class-card h-100">
+              <div class="class-card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="badge bg-warning">Medium Intensity</span>
+                  <span class="text-muted small">50 min</span>
+                </div>
+                <h4 class="class-card-title">Boxing classes</h4>
+                <p class="class-card-text">
+                  Technique and cardio drills for all levels
+                </p>
+                <p class="class-schedule">Next session: 23/02/2026 19:15</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer-->
+    <footer class="footer py-0 bg-black text-white border-top border-dark">
+      <div class="container-fluid px-md-5">
+        <div class="row align-items-center m-0 g-0" style="min-height: 50px">
+          <div class="col-lg-3 text-center text-lg-start py-1">
+            <img
+              src="../static/assets/images/Without_back_logo.png"
+              alt="NexGym Logo"
+              class="footer-logo-img"
+              style="height: 50px" />
+            <span class="social-links ms-2">
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location.href='https://www.instagram.com'"
+               
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location.href='https://twitter.com'"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location.href='https://www.facebook.com'"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </span>
+          </div>
+
+          <div class="col-lg-6 py-1">
+            <div class="d-flex justify-content-center flex-wrap footer-links">
+              <a href="#faq" class="mx-2 my-0 small text-decoration-none"
+                >FAQ</a
+              >
+              <a href="#contact" class="mx-2 my-0 small text-decoration-none"
+                >Contact</a
+              >
+              <a href="#privacy" class="mx-2 my-0 small text-decoration-none"
+                >Privacy</a
+              >
+              <a href="#terms" class="mx-2 my-0 small text-decoration-none"
+                >Terms</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 text-center text-lg-end py-1">
+            <p class="text-light mb-0" style="font-size: 0.7rem">
+              © 2026 NEXGYM.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Class - NexGym</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../static/assets/images/icono.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="../static/styles/newclassCSS.css" />
+    <link rel="stylesheet" href="../static/styles/headerCSS.css" />
+    <link rel="stylesheet" href="../static/styles/footerCSS.css" />
+  </head>
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="../static/assets/images/Without_back_logo.png"
+            alt="Nexgym"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onclick="window.location.href = 'profileAdmin.html'"
+                >ADMIN PAGE</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" onclick="window.location.href = 'index.html'"
+                >Log out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="admin-main">
+      <div class="content-area">
+        <section class="content-section active">
+          <h2>Edit Class</h2>
+          <form
+            class="add-form"
+            id="new-class-form"
+            method="post"
+            action="./admin.html">
+            <div class="form-row">
+              <label for="class-name">
+                Name
+                <input
+                  type="text"
+                  id="class-name"
+                  name="class-name"
+                  placeholder="Enter class name"
+                  required />
+              </label>
+              <label for="class-trainer">
+                Trainer
+                <input
+                  type="text"
+                  id="class-trainer"
+                  name="class-trainer"
+                  placeholder="Enter trainer name"
+                  required />
+              </label>
+            </div>
+            <div class="form-row">
+              <label for="class-description">
+                Description
+                <textarea
+                  id="class-description"
+                  name="class-description"
+                  rows="4"
+                  placeholder="Enter a short description"
+                  required></textarea>
+              </label>
+              <label for="class-photos">
+                Images
+                <input
+                  type="file"
+                  id="class-photos"
+                  name="class-photos"
+                  accept="image/*"
+                  multiple />
+                <span class="file-hint">You can select up to 4 images</span>
+              </label>
+            </div>
+            <div class="form-row full">
+              <div class="images-preview-container">
+                <label>Selected Images</label>
+                <div id="images-preview" class="images-preview"></div>
+              </div>
+            </div>
+            <div class="form-row full">
+              <div class="schedule-field">
+                <label for="class-schedule">Schedule</label>
+                <div class="schedule-builder" id="schedule-builder">
+                  <div class="schedule-row">
+                    <select
+                      name="schedule-day[]"
+                      aria-label="Select day"
+                      required>
+                      <option value="" disabled selected>Day</option>
+                      <option>Monday</option>
+                      <option>Tuesday</option>
+                      <option>Wednesday</option>
+                      <option>Thursday</option>
+                      <option>Friday</option>
+                      <option>Saturday</option>
+                      <option>Sunday</option>
+                    </select>
+                    <select
+                      name="schedule-time[]"
+                      aria-label="Select time"
+                      required>
+                      <option value="" disabled selected>Time</option>
+                      <option>06:00</option>
+                      <option>07:00</option>
+                      <option>08:00</option>
+                      <option>09:00</option>
+                      <option>10:00</option>
+                      <option>11:00</option>
+                      <option>12:00</option>
+                      <option>13:00</option>
+                      <option>14:00</option>
+                      <option>15:00</option>
+                      <option>16:00</option>
+                      <option>17:00</option>
+                      <option>18:00</option>
+                      <option>19:00</option>
+                      <option>20:00</option>
+                      <option>21:00</option>
+                      <option>22:00</option>
+                    </select>
+                    <button
+                      class="schedule-button schedule-add"
+                      type="button"
+                      aria-label="Add schedule">
+                      +
+                    </button>
+                    <button
+                      class="schedule-button schedule-remove"
+                      type="button"
+                      aria-label="Remove schedule">
+                      -
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Add</button>
+              <button class="btn btn-secondary" type="button">Cancel</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="footer py-0 bg-black text-white border-top border-dark">
+      <div class="container-fluid px-md-5">
+        <div class="row align-items-center m-0 g-0" style="min-height: 50px">
+          <div class="col-lg-3 text-center text-lg-start py-1">
+            <img
+              src="../static/assets/images/Without_back_logo.png"
+              alt="NexGym Logo"
+              class="footer-logo-img"
+              onclick="window.location = 'index.html'" />
+            <span class="social-links ms-2">
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location = 'https://www.instagram.com'"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location = 'https://twitter.com'"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location = 'https://www.facebook.com'"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </span>
+          </div>
+
+          <div class="col-lg-6 py-1">
+            <div class="d-flex justify-content-center flex-wrap footer-links">
+              <a href="#faq" class="mx-2 my-0 small text-decoration-none"
+                >FAQ</a
+              >
+              <a href="#contact" class="mx-2 my-0 small text-decoration-none"
+                >Contact</a
+              >
+              <a href="#privacy" class="mx-2 my-0 small text-decoration-none"
+                >Privacy</a
+              >
+              <a href="#terms" class="mx-2 my-0 small text-decoration-none"
+                >Terms</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 text-center text-lg-end py-1">
+            <p class="text-light mb-0" style="font-size: 0.7rem">
+              © 2026 NEXGYM.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../static/js/newClass.js"></script>
+  </body>
+</html>

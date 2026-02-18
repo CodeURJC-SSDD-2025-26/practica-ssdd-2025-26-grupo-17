@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Details - NexGym</title>
+    <!-- Favicon-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../static/assets/images/icono.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="../static/styles/classCSS.css" />
+    <link rel="stylesheet" href="../static/styles/footerCSS.css" />
+  </head>
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="../static/assets/images/Without_back_logo.png"
+            alt="Nexgym"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sessions">Sessions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#comments">Comments</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Class Info -->
+    <section class="class-hero">
+      <div class="hero-content">
+        <h1 class="class-title">Taekwondo Classes</h1>
+        <p class="class-description">
+          Join us to learn valuable skills with our martial arts experts
+        </p>
+        <div class="class-info">
+          <p class="coach-info">
+            <i class="bi bi-person-fill"></i> Coach: Antonio Ruiz
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Class Images Carousel Section -->
+    <section class="carousel-section">
+      <div class="carousel-container">
+        <div id="classCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#classCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#classCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#classCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#classCarousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../static/assets/images/im1-gym.jpg"
+                class="d-block w-100 carousel-image"
+                alt="Class image 1" />
+              <div class="carousel-caption">
+                <p>Training session in progress</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../static/assets/images/im2-gym.jpg"
+                class="d-block w-100 carousel-image"
+                alt="Class image 2" />
+              <div class="carousel-caption">
+                <p>Participants practicing techniques</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../static/assets/images/im3-gym.jpg"
+                class="d-block w-100 carousel-image"
+                alt="Class image 3" />
+              <div class="carousel-caption">
+                <p>Competition and sparring</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../static/assets/images/im4-gym.jpg"
+                class="d-block w-100 carousel-image"
+                alt="Class image 4" />
+              <div class="carousel-caption">
+                <p>Group training activity</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#classCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#classCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="class-main">
+      <!-- Sessions Section -->
+      <section id="sessions" class="sessions-section">
+        <div class="section-container">
+          <h2 class="section-title">Next Sessions</h2>
+          <p class="section-subtitle">
+            Sign up for the sessions that work best for you
+          </p>
+
+          <div class="row sessions-grid">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="session-card">
+                <div class="session-header">
+                  <i class="bi bi-calendar3"></i>
+                  <h3>Session 1</h3>
+                </div>
+                <div class="session-body">
+                  <p class="session-date">
+                    <strong>10/02/2026</strong> at <strong>15:30</strong>
+                  </p>
+                  <p class="session-capacity">
+                    <i class="bi bi-people-fill"></i> 50 / 55 Members
+                  </p>
+                  <div class="capacity-bar">
+                    <div class="capacity-fill" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="session-footer">
+                  <button class="btn btn-signup">Sign Up</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="session-card">
+                <div class="session-header">
+                  <i class="bi bi-calendar3"></i>
+                  <h3>Session 2</h3>
+                </div>
+                <div class="session-body">
+                  <p class="session-date">
+                    <strong>17/02/2026</strong> at <strong>15:30</strong>
+                  </p>
+                  <p class="session-capacity">
+                    <i class="bi bi-people-fill"></i> 45 / 55 Members
+                  </p>
+                  <div class="capacity-bar">
+                    <div class="capacity-fill" style="width: 81%"></div>
+                  </div>
+                </div>
+                <div class="session-footer">
+                  <button class="btn btn-signup">Sign Up</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="session-card">
+                <div class="session-header">
+                  <i class="bi bi-calendar3"></i>
+                  <h3>Session 3</h3>
+                </div>
+                <div class="session-body">
+                  <p class="session-date">
+                    <strong>24/02/2026</strong> at <strong>15:30</strong>
+                  </p>
+                  <p class="session-capacity">
+                    <i class="bi bi-people-fill"></i> 40 / 55 Members
+                  </p>
+                  <div class="capacity-bar">
+                    <div class="capacity-fill" style="width: 72%"></div>
+                  </div>
+                </div>
+                <div class="session-footer">
+                  <button class="btn btn-signup">Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comments Section -->
+      <section id="comments" class="comments-section">
+        <div class="section-container">
+          <h2 class="section-title">Student Comments</h2>
+          <p class="section-subtitle">What our students say about this class</p>
+
+          <div class="comments-wrapper">
+            <!-- Comment 1 -->
+            <div class="comment-item">
+              <div class="comment-header">
+                <img
+                  src="../static/assets/images/personal-trainer-1.png"
+                  alt="Profile"
+                  class="comment-avatar" />
+                <div class="comment-meta">
+                  <h4 class="comment-author">Mark Johnson</h4>
+                  <p class="comment-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </p>
+                </div>
+                <div class="comment-actions">
+                  <button
+                    class="btn btn-sm btn-outline-secondary btn-edit-comment"
+                    aria-label="Edit comment"
+                    type="button">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                  <a
+                    class="btn btn-sm btn-outline-danger"
+                    aria-label="Delete comment"
+                    href="./error.html">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </div>
+              </div>
+              <p class="comment-text">
+                After my first session I was so tired I thought I would need to
+                find another class, but after 3 months of training this class
+                feels easy. Totally recommended!
+              </p>
+            </div>
+
+            <!-- Comment 2 -->
+            <div class="comment-item">
+              <div class="comment-header">
+                <img
+                  src="../static/assets/images/personal-trainer-2.png"
+                  alt="Profile"
+                  class="comment-avatar" />
+                <div class="comment-meta">
+                  <h4 class="comment-author">Andrew Martinez</h4>
+                  <p class="comment-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </p>
+                </div>
+                <div class="comment-actions">
+                  <button
+                    class="btn btn-sm btn-outline-secondary btn-edit-comment"
+                    aria-label="Edit comment"
+                    type="button">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                  <a
+                    class="btn btn-sm btn-outline-danger"
+                    aria-label="Delete comment"
+                    href="./error.html">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </div>
+              </div>
+              <p class="comment-text">
+                After a month training taekwondo at NexGym I have noticed a big
+                improvement in my flexibility and endurance. The coach is very
+                professional.
+              </p>
+            </div>
+
+            <!-- Comment 3 -->
+            <div class="comment-item">
+              <div class="comment-header">
+                <img
+                  src="../static/assets/images/personal-trainer-3.png"
+                  alt="Profile"
+                  class="comment-avatar" />
+                <div class="comment-meta">
+                  <h4 class="comment-author">Laura Garcia</h4>
+                  <p class="comment-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </p>
+                </div>
+                <div class="comment-actions">
+                  <button
+                    class="btn btn-sm btn-outline-secondary btn-edit-comment"
+                    aria-label="Edit comment"
+                    type="button">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                  <a
+                    class="btn btn-sm btn-outline-danger"
+                    aria-label="Delete comment"
+                    href="./error.html">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </div>
+              </div>
+              <p class="comment-text">
+                Excellent class. The atmosphere is very motivating and all
+                students are respectful. I will definitely keep attending.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Add Comment Form -->
+      <section class="add-comment-section">
+        <div class="section-container">
+          <h2 class="section-title">Share Your Experience</h2>
+          <p class="section-subtitle">Write a comment about this class</p>
+
+          <div class="comment-form-wrapper">
+            <form class="comment-form">
+              <div class="form-group">
+                <label for="userRating">Rating</label>
+                <select class="form-control" id="userRating" required>
+                  <option value="">Select a rating</option>
+                  <option value="5">★★★★★ Excellent</option>
+                  <option value="4">★★★★☆ Good</option>
+                  <option value="3">★★★☆☆ Average</option>
+                  <option value="2">★★☆☆☆ Fair</option>
+                  <option value="1">★☆☆☆☆ Poor</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="userComment">Comment</label>
+                <textarea
+                  class="form-control"
+                  id="userComment"
+                  rows="5"
+                  placeholder="Share your thoughts about this class..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-submit">
+                Submit Comment
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-0 bg-black text-white border-top border-dark">
+      <div class="container-fluid px-md-5">
+        <div class="row align-items-center m-0 g-0" style="min-height: 50px">
+          <div class="col-lg-3 text-center text-lg-start py-1">
+            <img
+              src="../static/assets/images/Without_back_logo.png"
+              alt="NexGym Logo"
+              class="footer-logo-img"
+              style="height: 50px" />
+            <span class="social-links ms-2">
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location"
+                ="https://www.instagram.com"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location"
+                ="https://twitter.com"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location"
+                ="https://www.facebook.com"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </span>
+          </div>
+
+          <div class="col-lg-6 py-1">
+            <div class="d-flex justify-content-center flex-wrap footer-links">
+              <a href="#faq" class="mx-2 my-0 small text-decoration-none"
+                >FAQ</a
+              >
+              <a href="#contact" class="mx-2 my-0 small text-decoration-none"
+                >Contact</a
+              >
+              <a href="#privacy" class="mx-2 my-0 small text-decoration-none"
+                >Privacy</a
+              >
+              <a href="#terms" class="mx-2 my-0 small text-decoration-none"
+                >Terms</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 text-center text-lg-end py-1">
+            <p class="text-light mb-0" style="font-size: 0.7rem">
+              © 2026 NEXGYM.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/class.js"></script>
+  </body>
+</html>

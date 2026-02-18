@@ -1,0 +1,1084 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrator panel - NexGym</title>
+    <!-- Favicon-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../static/assets/images/icono.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="../static/styles/adminCSS.css" />
+    <link rel="stylesheet" href="../static/styles/headerCSS.css" />
+    <link rel="stylesheet" href="../static/styles/footerCSS.css" />
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="../static/assets/images/Without_back_logo.png"
+            alt="Nexgym"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onclick="window.location.href = 'profileAdmin.html'"
+                >SETTINGS</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" onclick="window.location.href = 'index.html'"
+                >Log out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="admin-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <ul class="nav-list">
+            <li class="nav-item active" data-section="users">
+              <a href="#" class="nav-link">Users</a>
+            </li>
+            <li class="nav-item" data-section="classes">
+              <a href="#" class="nav-link">Classes</a>
+            </li>
+            <li class="nav-item" data-section="schedule">
+              <a href="#" class="nav-link">Schedule</a>
+            </li>
+            <li class="nav-item" data-section="statistics">
+              <a href="#" class="nav-link">Statistics</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main -->
+      <main class="admin-main">
+        <!-- Content area of the different sections-->
+        <div class="content-area">
+          <!-- Users -->
+          <section id="users" class="content-section active">
+            <h2>Users Management</h2>
+            <div class="table-wrapper">
+              <table class="users-table" aria-label="Users table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Laura</td>
+                    <td>Green</td>
+                    <td>laura.green@example.com</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'profile.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        onclick="window.location = 'profileAdmin.html'">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Michael</td>
+                    <td>Harris</td>
+                    <td>michael.harris@example.com</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'profile.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        onclick="window.location = 'profileAdmin.html'">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Anna</td>
+                    <td>Lewis</td>
+                    <td>anna.lewis@example.com</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'profile.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        onclick="window.location = 'profileAdmin.html'">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Charles</td>
+                    <td>Sanders</td>
+                    <td>charles.sanders@example.com</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'profile.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        onclick="window.location = 'profileAdmin.html'">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Martha</td>
+                    <td>Rogers</td>
+                    <td>martha.rogers@example.com</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'profile.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        onclick="window.location = 'profileAdmin.html'">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Peter</td>
+                    <td>Martin</td>
+                    <td>peter.martin@example.com</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'profile.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        onclick="window.location = 'profileAdmin.html'">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sophia</td>
+                    <td>Fields</td>
+                    <td>sophia.fields@example.com</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'profile.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        onclick="window.location = 'profileAdmin.html'">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>James</td>
+                    <td>Gray</td>
+                    <td>james.gray@example.com</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'profile.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        onclick="window.location = 'profileAdmin.html'">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Ellen</td>
+                    <td>Drake</td>
+                    <td>ellen.drake@example.com</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'profile.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        onclick="window.location = 'profileAdmin.html'">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Albert</td>
+                    <td>Reed</td>
+                    <td>albert.reed@example.com</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'profile.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        onclick="window.location = 'profileAdmin.html'">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Isabel</td>
+                    <td>Rogers</td>
+                    <td>isabel.rogers@example.com</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'profile.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        onclick="window.location = 'profileAdmin.html'">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Daniel</td>
+                    <td>Owen</td>
+                    <td>daniel.owen@example.com</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'profile.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        onclick="window.location = 'profileAdmin.html'">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Classes -->
+          <section id="classes" class="content-section">
+            <h2>Classes Management</h2>
+            <div class="table-wrapper">
+              <table
+                class="classes-table"
+                id="classes-table"
+                aria-label="Classes table">
+                <thead>
+                  <tr>
+                    <th>Name of the class</th>
+                    <th>Trainer</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Yoga Flow</td>
+                    <td>John Parker</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'class.html'">
+                        View
+                      </button>
+
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        type="button"
+                        onclick="
+                          window.location.href =
+                            'newclass.html?mode=edit&class=Yoga%20Flow'
+                        ">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm" type="button">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>HIIT</td>
+                    <td>Mary Carter</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'class.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        type="button"
+                        onclick="
+                          window.location.href =
+                            'newclass.html?mode=edit&class=HIIT'
+                        ">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm" type="button">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Pilates</td>
+                    <td>John Parker</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'class.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        type="button"
+                        onclick="
+                          window.location.href =
+                            'newclass.html?mode=edit&class=Pilates'
+                        ">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm" type="button">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Spinning</td>
+                    <td>Charles Reed</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'class.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        type="button"
+                        onclick="
+                          window.location.href =
+                            'newclass.html?mode=edit&class=Spinning'
+                        ">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm" type="button">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Body Pump</td>
+                    <td>John Parker</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'class.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        type="button"
+                        onclick="
+                          window.location.href =
+                            'newclass.html?mode=edit&class=Body%20Pump'
+                        ">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm" type="button">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Boxing</td>
+                    <td>Mary Carter</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'class.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        type="button"
+                        onclick="
+                          window.location.href =
+                            'newclass.html?mode=edit&class=Boxing'
+                        ">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm" type="button">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Stretching</td>
+                    <td>Charles Reed</td>
+                    <td>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        onclick="window.location = 'class.html'">
+                        View
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-sm"
+                        type="button"
+                        onclick="
+                          window.location.href =
+                            'newclass.html?mode=edit&class=Stretching'
+                        ">
+                        Edit
+                      </button>
+                      <button class="btn btn-danger btn-sm" type="button">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="add-class-action">
+              <button
+                class="btn btn-warning btn-sm"
+                type="button"
+                onclick="window.location.href = 'newclass.html'">
+                Add class
+              </button>
+            </div>
+          </section>
+
+          <!-- Schedule -->
+          <section id="schedule" class="content-section">
+            <h2>Schedule Management</h2>
+            <div class="schedules-list">
+              <div class="schedule-item">
+                <div class="schedule-header">
+                  <h5>Yoga Flow</h5>
+                  <p class="trainer-info">Trainer: John Parker</p>
+                </div>
+                <ul class="schedule-list">
+                  <li>Mon 09:00</li>
+                  <li>Wed 18:00</li>
+                  <li>Fri 10:30</li>
+                </ul>
+                <div class="comment-actions">
+                  <button
+                    class="btn btn-sm btn-outline-secondary"
+                    aria-label="Edit comment"
+                    onclick="
+                      window.location.href =
+                        'newclass.html?mode=edit&class=Yoga%20Flow'
+                    ">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                  <button
+                    class="btn btn-sm btn-outline-danger"
+                    aria-label="Delete comment">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-header">
+                  <h5>HIIT</h5>
+                  <p class="trainer-info">Trainer: Mary Carter</p>
+                </div>
+                <ul class="schedule-list">
+                  <li>Tue 07:30</li>
+                  <li>Thu 17:30</li>
+                  <li>Sat 08:00</li>
+                </ul>
+                <div class="comment-actions">
+                  <button
+                    class="btn btn-sm btn-outline-secondary"
+                    aria-label="Edit comment"
+                    onclick="
+                      window.location.href =
+                        'newclass.html?mode=edit&class=HIIT'
+                    ">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                  <button
+                    class="btn btn-sm btn-outline-danger"
+                    aria-label="Delete comment">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-header">
+                  <h5>Pilates</h5>
+                  <p class="trainer-info">Trainer: Anna Lewis</p>
+                </div>
+                <ul class="schedule-list">
+                  <li>Mon 11:00</li>
+                  <li>Thu 19:00</li>
+                  <li>Sun 10:00</li>
+                </ul>
+                <div class="comment-actions">
+                  <button
+                    class="btn btn-sm btn-outline-secondary"
+                    aria-label="Edit comment"
+                    onclick="
+                      window.location.href =
+                        'newclass.html?mode=edit&class=Pilates'
+                    ">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                  <button
+                    class="btn btn-sm btn-outline-danger"
+                    aria-label="Delete comment">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-header">
+                  <h5>Spinning</h5>
+                  <p class="trainer-info">Trainer: Charles Reed</p>
+                </div>
+                <ul class="schedule-list">
+                  <li>Tue 18:00</li>
+                  <li>Sat 19:00</li>
+                </ul>
+                <div class="comment-actions">
+                  <button
+                    class="btn btn-sm btn-outline-secondary"
+                    aria-label="Edit comment"
+                    onclick="
+                      window.location.href =
+                        'newclass.html?mode=edit&class=Spinning'
+                    ">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                  <button
+                    class="btn btn-sm btn-outline-danger"
+                    aria-label="Delete comment">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-header">
+                  <h5>Body Pump</h5>
+                  <p class="trainer-info">Trainer: John Parker</p>
+                </div>
+                <ul class="schedule-list">
+                  <li>Wed 12:00</li>
+                  <li>Sat 10:00</li>
+                </ul>
+                <div class="comment-actions">
+                  <button
+                    class="btn btn-sm btn-outline-secondary"
+                    aria-label="Edit comment"
+                    onclick="
+                      window.location.href =
+                        'newclass.html?mode=edit&class=Body%20Pump'
+                    ">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                  <button
+                    class="btn btn-sm btn-outline-danger"
+                    aria-label="Delete comment">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-header">
+                  <h5>Boxing</h5>
+                  <p class="trainer-info">Trainer: Mary Carter</p>
+                </div>
+                <ul class="schedule-list">
+                  <li>Mon 18:30</li>
+                  <li>Sun 11:00</li>
+                </ul>
+                <div class="comment-actions">
+                  <button
+                    class="btn btn-sm btn-outline-secondary"
+                    aria-label="Edit comment"
+                    onclick="
+                      window.location.href =
+                        'newclass.html?mode=edit&class=Boxing'
+                    ">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                  <button
+                    class="btn btn-sm btn-outline-danger"
+                    aria-label="Delete comment">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-header">
+                  <h5>Stretching</h5>
+                  <p class="trainer-info">Trainer: Charles Reed</p>
+                </div>
+                <ul class="schedule-list">
+                  <li>Tue 10:00</li>
+                  <li>Thu 09:00</li>
+                </ul>
+                <div class="comment-actions">
+                  <button
+                    class="btn btn-sm btn-outline-secondary"
+                    aria-label="Edit comment"
+                    onclick="
+                      window.location.href =
+                        'newclass.html?mode=edit&class=Stretching'
+                    ">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                  <button
+                    class="btn btn-sm btn-outline-danger"
+                    aria-label="Delete comment">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Statistics -->
+          <section id="statistics" class="content-section">
+            <h2>Statistics</h2>
+            <div class="stats-container">
+              <!-- Overall attendance chart -->
+              <div class="aggregate-chart">
+                <h3>Total Attendance by Day (Last 7 Days)</h3>
+                <canvas id="aggregateChart" width="800" height="300"></canvas>
+              </div>
+
+              <!-- Per-class charts -->
+              <div class="individual-charts">
+                <div class="chart-container">
+                  <h4>Yoga Flow - Attendance per Day</h4>
+                  <canvas id="chartYoga" width="400" height="250"></canvas>
+                </div>
+                <div class="chart-container">
+                  <h4>HIIT - Attendance per Day</h4>
+                  <canvas id="chartHIIT" width="400" height="250"></canvas>
+                </div>
+                <div class="chart-container">
+                  <h4>Pilates - Attendance per Day</h4>
+                  <canvas id="chartPilates" width="400" height="250"></canvas>
+                </div>
+                <div class="chart-container">
+                  <h4>Spinning - Attendance per Day</h4>
+                  <canvas id="chartSpinning" width="400" height="250"></canvas>
+                </div>
+                <div class="chart-container">
+                  <h4>Body Pump - Attendance per Day</h4>
+                  <canvas id="chartBodyPump" width="400" height="250"></canvas>
+                </div>
+                <div class="chart-container">
+                  <h4>Boxing - Attendance per Day</h4>
+                  <canvas id="chartBoxing" width="400" height="250"></canvas>
+                </div>
+                <div class="chart-container">
+                  <h4>Stretching - Attendance per Day</h4>
+                  <canvas
+                    id="chartStretching"
+                    width="400"
+                    height="250"></canvas>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../static/js/adminPanel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // ===== PROFILE DROPDOWN MENU =====
+      document.addEventListener("DOMContentLoaded", function () {
+        const userProfile = document.getElementById("userProfile");
+        const profileDropdown = document.getElementById("profileDropdown");
+
+        // Toggle the dropdown menu
+        userProfile.addEventListener("click", function (event) {
+          event.stopPropagation();
+          profileDropdown.classList.toggle("show");
+          userProfile.classList.toggle("active");
+        });
+
+        // Close the menu if clicking outside it
+        document.addEventListener("click", function (event) {
+          if (!userProfile.contains(event.target)) {
+            profileDropdown.classList.remove("show");
+            userProfile.classList.remove("active");
+          }
+        });
+
+        // Prevent clicks inside the dropdown from closing it
+        profileDropdown.addEventListener("click", function (event) {
+          event.stopPropagation();
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const addScheduleForm = document.getElementById("add-schedule-form");
+        const scheduleClassInput = document.getElementById("schedule-class");
+        const scheduleTimeInput = document.getElementById("schedule-time");
+        const scheduleError = document.getElementById("schedule-error");
+        const classesTableRows = document.querySelectorAll(
+          "#classes .classes-table tbody tr",
+        );
+        const schedulesList = document.querySelector(
+          "#schedule .schedules-list",
+        );
+
+        if (!addScheduleForm || !schedulesList) return;
+
+        function classExists(className) {
+          const target = className.toLowerCase();
+          return Array.from(classesTableRows).some((row) => {
+            const nameCell = row.querySelector("td");
+            return (
+              nameCell && nameCell.textContent.trim().toLowerCase() === target
+            );
+          });
+        }
+
+        function findScheduleItem(className) {
+          const target = className.toLowerCase();
+          const items = schedulesList.querySelectorAll(".schedule-item");
+          return Array.from(items).find((item) => {
+            const title = item.querySelector("h5");
+            return title && title.textContent.trim().toLowerCase() === target;
+          });
+        }
+
+        addScheduleForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const className = scheduleClassInput.value.trim();
+          const scheduleTime = scheduleTimeInput.value.trim();
+
+          scheduleError.textContent = "";
+
+          if (!className || !scheduleTime) return;
+
+          if (!classExists(className)) {
+            scheduleError.textContent = "Class not found in the Classes table.";
+            return;
+          }
+
+          let scheduleItem = findScheduleItem(className);
+
+          if (!scheduleItem) {
+            scheduleItem = document.createElement("div");
+            scheduleItem.className = "schedule-item";
+            scheduleItem.innerHTML = `
+              <div class="schedule-header">
+                <h5>${className}</h5>
+                <p class="trainer-info">Trainer: Pending</p>
+              </div>
+              <ul class="schedule-list"></ul>
+            `;
+            schedulesList.appendChild(scheduleItem);
+          }
+
+          const list = scheduleItem.querySelector(".schedule-list");
+          const entry = document.createElement("li");
+          entry.textContent = scheduleTime;
+          list.appendChild(entry);
+
+          addScheduleForm.reset();
+        });
+      });
+
+      // ===== CHARTS (original code unchanged) =====
+      document.addEventListener("DOMContentLoaded", function () {
+        // Days of the week
+        const days = [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ];
+
+        // Attendance data for each class per day of the week (invented data)
+        const yogaData = [15, 18, 12, 20, 16, 22, 19];
+        const hiitData = [18, 16, 21, 17, 19, 23, 20];
+        const pilatesData = [12, 14, 18, 15, 17, 19, 16];
+        const spinningData = [14, 19, 16, 18, 20, 25, 17];
+        const bodyPumpData = [16, 15, 17, 19, 18, 21, 14];
+        const boxingData = [13, 17, 14, 16, 18, 22, 20];
+        const stretchingData = [20, 18, 19, 17, 21, 16, 18];
+
+        // Calculate aggregate data
+        const aggregateData = yogaData.map(
+          (_, idx) =>
+            yogaData[idx] +
+            hiitData[idx] +
+            pilatesData[idx] +
+            spinningData[idx] +
+            bodyPumpData[idx] +
+            boxingData[idx] +
+            stretchingData[idx],
+        );
+
+        // Create aggregate chart
+        const aggregateCtx = document.getElementById("aggregateChart");
+        if (aggregateCtx) {
+          new Chart(aggregateCtx, {
+            type: "line",
+            data: {
+              labels: days,
+              datasets: [
+                {
+                  label: "Total Attendance",
+                  data: aggregateData,
+                  backgroundColor: "rgba(251, 204, 35, 0.2)",
+                  borderColor: "#fbcc23",
+                  borderWidth: 3,
+                  fill: true,
+                  tension: 0.4,
+                  pointBackgroundColor: "#fbcc23",
+                  pointBorderColor: "#fff",
+                  pointBorderWidth: 2,
+                  pointRadius: 5,
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              plugins: {
+                legend: { display: true, position: "top" },
+              },
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  ticks: { stepSize: 10 },
+                },
+              },
+            },
+          });
+        }
+
+        // Function to create class charts
+        function createClassChart(canvasId, label, data, color, borderColor) {
+          const ctx = document.getElementById(canvasId);
+          if (ctx) {
+            new Chart(ctx, {
+              type: "bar",
+              data: {
+                labels: days,
+                datasets: [
+                  {
+                    label: label,
+                    data: data,
+                    backgroundColor: color,
+                    borderColor: borderColor,
+                    borderWidth: 2,
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: true } },
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    max: 30,
+                    ticks: { stepSize: 5 },
+                  },
+                },
+              },
+            });
+          }
+        }
+
+        // Create charts for each class
+        createClassChart(
+          "chartYoga",
+          "Yoga Flow",
+          yogaData,
+          "rgba(251, 204, 35, 0.8)",
+          "#fbcc23",
+        );
+        createClassChart(
+          "chartHIIT",
+          "HIIT",
+          hiitData,
+          "rgba(0, 150, 190, 0.8)",
+          "#0096be",
+        );
+        createClassChart(
+          "chartPilates",
+          "Pilates",
+          pilatesData,
+          "rgba(100, 200, 50, 0.8)",
+          "#64c832",
+        );
+        createClassChart(
+          "chartSpinning",
+          "Spinning",
+          spinningData,
+          "rgba(255, 107, 107, 0.8)",
+          "#ff6b6b",
+        );
+        createClassChart(
+          "chartBodyPump",
+          "Body Pump",
+          bodyPumpData,
+          "rgba(155, 89, 182, 0.8)",
+          "#9b59b6",
+        );
+        createClassChart(
+          "chartBoxing",
+          "Boxing",
+          boxingData,
+          "rgba(52, 152, 219, 0.8)",
+          "#3498db",
+        );
+        createClassChart(
+          "chartStretching",
+          "Stretching",
+          stretchingData,
+          "rgba(46, 204, 113, 0.8)",
+          "#2ecc71",
+        );
+      });
+    </script>
+
+    <footer class="footer py-0 bg-black text-white border-top border-dark">
+      <div class="container-fluid px-md-5">
+        <div class="row align-items-center m-0 g-0" style="min-height: 50px">
+          <div class="col-lg-3 text-center text-lg-start py-1">
+            <img
+              src="../static/assets/images/Without_back_logo.png"
+              alt="NexGym Logo"
+              class="footer-logo-img"
+              style="height: 50px" />
+            <span class="social-links ms-2">
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location"
+                ="https://www.instagram.com"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location"
+                ="https://twitter.com"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="#"
+                class="text-light me-2 small"
+                onclick="window.location"
+                ="https://www.facebook.com"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </span>
+          </div>
+
+          <div class="col-lg-6 py-1">
+            <div class="d-flex justify-content-center flex-wrap footer-links">
+              <a href="#faq" class="mx-2 my-0 small text-decoration-none"
+                >FAQ</a
+              >
+              <a href="#contact" class="mx-2 my-0 small text-decoration-none"
+                >Contact</a
+              >
+              <a href="#privacy" class="mx-2 my-0 small text-decoration-none"
+                >Privacy</a
+              >
+              <a href="#terms" class="mx-2 my-0 small text-decoration-none"
+                >Terms</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 text-center text-lg-end py-1">
+            <p class="text-light mb-0" style="font-size: 0.7rem">
+              © 2026 NEXGYM.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
