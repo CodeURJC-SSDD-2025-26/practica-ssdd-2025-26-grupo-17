@@ -159,17 +159,17 @@ He desarrollado las páginas Index, Payment y Class, encargándome de la impleme
 
 ---
 
-#### **Alumno 3 - [Nombre Completo]**
+#### **Alumno 3 - Rodrigo Fernández de Córdoba García**
 
 [Descripción de las tareas y responsabilidades principales del alumno en el proyecto]
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
-|1| [Descripción commit 1](URL_commit_1)  | [Archivo1](URL_archivo_1)   |
-|2| [Descripción commit 2](URL_commit_2)  | [Archivo2](URL_archivo_2)   |
-|3| [Descripción commit 3](URL_commit_3)  | [Archivo3](URL_archivo_3)   |
-|4| [Descripción commit 4](URL_commit_4)  | [Archivo4](URL_archivo_4)   |
-|5| [Descripción commit 5](URL_commit_5)  | [Archivo5](URL_archivo_5)   |
+|1| Starting commit, added new pages for class and error with their css  | [URL_commit_1](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/3a4010222b197fbd51d7070075f03b601423ec34)   |
+|2| Big changes to profile, error and class pages; separated their css for clarity, translated text to english and added the navbar and missing styles  | [URL_commit_2](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/67f36d6fa3cb1e27e31a7d03849a56761bce0dd5)   |
+|3| Added the classes to the profile page, added the comments and comment form to the class page and fixed the error page footer | [URL_commit_3](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/acc628c304f265b63b5015f04a33179692745cff)   |
+|4| Changed profile and class pages to use bootstrap 5.3.0 from 3.1.0 to be in line with the rest of the pages | [URL_commit_4](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/ddd31013202ae15e6f9b98f94bd6f21a16923ae1)   |
+|5| Edited just about every CSS to remove their individual navbar CSS styles and added to every html the headerCSS stylesheet to keep a common header style across pages  | [URL_commit_5]https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/bfdc7243029c22a771aebebb24f74129dc8a5ab8#diff-182b27b78e79493cae10e5617c7d775b441aa85e0a24c6940938a8d49eeac3f1 |
 
 ---
 
