@@ -137,11 +137,11 @@ He realizado la implementación de la página de inicio de sesión / registro, l
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
-|1| Logic and information of the Admin site  | [URL_archivo_1](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/83bafd366713cc6597a15f34ea86a683bd7eae36)  |
-|2| Creation of the login/register website   | [URL_archivo_2](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/9f0885944270a84acc3eca7f3775d63e74cb4590)   |
-|3| Creation of the administrator site  |[URL_archivo_3](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/613d0e9d6a466d894902696ca090158406452617)   |
-|4| Creation of a new class   | [URL_archivo_4](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/8b3028994af805fffdb92fcaf20677b845d888b2)   |
-|5| Finished profile site   | [URL_commit_5](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/568ecccdef1dff2f81983820f24f605c53b1d91d)   |
+|1| [Lógica e información de la página de administrador](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/83bafd366713cc6597a15f34ea86a683bd7eae36)  | [admin.html](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/blob/83bafd366713cc6597a15f34ea86a683bd7eae36/nexgym/src/main/resources/static/admin.html)   |
+|2| [Creación de la página de login/registro](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/9f0885944270a84acc3eca7f3775d63e74cb4590)  | [login.html](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/blob/9f0885944270a84acc3eca7f3775d63e74cb4590/nexgym/src/main/resources/static/login.html)   |
+|3| [Creación de la página de administrador](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/613d0e9d6a466d894902696ca090158406452617)  | [admin.html](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/blob/613d0e9d6a466d894902696ca090158406452617/nexgym/src/main/resources/static/admin.html)   |
+|4| [Creación de la página de añadir/editar clase](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/8b3028994af805fffdb92fcaf20677b845d888b2)  | [newClass.html](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/blob/8b3028994af805fffdb92fcaf20677b845d888b2/nexgym/src/main/resources/templates/newClass.html)   |
+|5| [Terminal la página de perfil](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/tree/568ecccdef1dff2f81983820f24f605c53b1d91d)  | [Profile.html](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/blob/568ecccdef1dff2f81983820f24f605c53b1d91d/nexgym/src/main/resources/templates/profile.html)  [ProfileAdmin.html] (https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/blob/568ecccdef1dff2f81983820f24f605c53b1d91d/nexgym/src/main/resources/templates/profileAdmin.html)   |
 
 ---
 
