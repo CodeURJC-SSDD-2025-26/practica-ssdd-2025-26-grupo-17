@@ -92,8 +92,6 @@ Diagrama que muestra cómo se navega entre las diferentes páginas de la aplicac
 
 ### **Capturas de Pantalla y Descripción de Páginas**
 
-### **Capturas de Pantalla y Descripción de Páginas**
-
 #### 1. Página Principal
 ![Página Principal](images/pagina_principal.png)
 > Página de inicio desde la que se puede acceder a la página de iniciar sesión/registrarse, ver las clases disponibles (y su información) , información general sobre el ginmasio y un mapa de su ubicación. 
@@ -151,11 +149,11 @@ He desarrollado las páginas Index, Payment y Class, encargándome de la impleme
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
-|1| [Creation of the class page (HTML, CSS)](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/7fdc7d18bcf58870e1301e3cffd48cb53136165b#diff-182b27b78e79493cae10e5617c7d775b441aa85e0a24c6940938a8d49eeac3f1)| [class.html](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/7fdc7d18bcf58870e1301e3cffd48cb53136165b#diff-1e1704b90a4be86d5936df7491818a8f67403a69a67d1e59d00a6aa92fe504da)   |
-|2| [Creation of the index (main) website (HTML, CSS)](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/f0797e1a8c9bf3fb8de4235abb5a149611d60037) | [index.html](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/f0797e1a8c9bf3fb8de4235abb5a149611d60037#diff-c4b028e49bbffb4c84bcdf62d72799492e34bef674b38728c5bc23be37765d3d)   |
-|3| [Creation of the carousel of images of class page (HTML, CSS, JS)](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/69c3ce510761de30bc31d5cec36a3a66da9f41d9) | [newClass.js](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/69c3ce510761de30bc31d5cec36a3a66da9f41d9#diff-fbcba23dc9e339fcb34f2a87dd05cd563458bdd553821a055884ab5f6bf70eef)   |
-|4| [Creation of the payment page (HTML, CSS)](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/f22eb92e3a1d8a80fc3764e58411bacf53881d53) | [payment.html](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/f22eb92e3a1d8a80fc3764e58411bacf53881d53#diff-88ff935ae233898848e83ede2161f231125423857e7655b0b5953e198773f980)   |
-|5| [Changes for responsiveness in index page](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/578f2db6d664334e34e9b64adc044a04adce67a2#diff-c4b028e49bbffb4c84bcdf62d72799492e34bef674b38728c5bc23be37765d3d) | [indexCSS.css](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/578f2db6d664334e34e9b64adc044a04adce67a2#diff-33119f34279f218dac89b0eb314e409b0e58c7e006234cb2f4d5f1e9cc1936fe)   |
+|1| [Creación de la página de clase (HTML, CSS)](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/7fdc7d18bcf58870e1301e3cffd48cb53136165b#diff-182b27b78e79493cae10e5617c7d775b441aa85e0a24c6940938a8d49eeac3f1)| [class.html](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/7fdc7d18bcf58870e1301e3cffd48cb53136165b#diff-1e1704b90a4be86d5936df7491818a8f67403a69a67d1e59d00a6aa92fe504da)   |
+|2| [Creación de index (main) (HTML, CSS)](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/f0797e1a8c9bf3fb8de4235abb5a149611d60037) | [index.html](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/f0797e1a8c9bf3fb8de4235abb5a149611d60037#diff-c4b028e49bbffb4c84bcdf62d72799492e34bef674b38728c5bc23be37765d3d)   |
+|3| [Creación del carrousel de imágenes de la página de clase(HTML, CSS, JS)](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/69c3ce510761de30bc31d5cec36a3a66da9f41d9) | [newClass.js](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/69c3ce510761de30bc31d5cec36a3a66da9f41d9#diff-fbcba23dc9e339fcb34f2a87dd05cd563458bdd553821a055884ab5f6bf70eef)   |
+|4| [Creación de la página de pago (HTML, CSS)](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/f22eb92e3a1d8a80fc3764e58411bacf53881d53) | [payment.html](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/f22eb92e3a1d8a80fc3764e58411bacf53881d53#diff-88ff935ae233898848e83ede2161f231125423857e7655b0b5953e198773f980)   |
+|5| [Cambios en la página index para que sea responsive](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/578f2db6d664334e34e9b64adc044a04adce67a2#diff-c4b028e49bbffb4c84bcdf62d72799492e34bef674b38728c5bc23be37765d3d) | [indexCSS.css](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/578f2db6d664334e34e9b64adc044a04adce67a2#diff-33119f34279f218dac89b0eb314e409b0e58c7e006234cb2f4d5f1e9cc1936fe)   |
 
 ---
 
@@ -165,11 +163,11 @@ He desarrollado las páginas Index, Payment y Class, encargándome de la impleme
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
-|1| Starting commit, added new pages for class and error with their css  | [URL_commit_1](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/3a4010222b197fbd51d7070075f03b601423ec34)   |
-|2| Big changes to profile, error and class pages; separated their css for clarity, translated text to english and added the navbar and missing styles  | [URL_commit_2](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/67f36d6fa3cb1e27e31a7d03849a56761bce0dd5)   |
-|3| Added the classes to the profile page, added the comments and comment form to the class page and fixed the error page footer | [URL_commit_3](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/acc628c304f265b63b5015f04a33179692745cff)   |
-|4| Changed profile and class pages to use bootstrap 5.3.0 from 3.1.0 to be in line with the rest of the pages | [URL_commit_4](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/ddd31013202ae15e6f9b98f94bd6f21a16923ae1)   |
-|5| Edited just about every CSS to remove their individual navbar CSS styles and added to every html the headerCSS stylesheet to keep a common header style across pages  | [URL_commit_5]https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/bfdc7243029c22a771aebebb24f74129dc8a5ab8#diff-182b27b78e79493cae10e5617c7d775b441aa85e0a24c6940938a8d49eeac3f1 |
+|1| Commit inicial, añadir las páginas de clase y error con sus commits  | [URL_commit_1](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/3a4010222b197fbd51d7070075f03b601423ec34)   |
+|2| Grandes cambios en las páginas de perfil, error y clase; separar sus CSS para mayor claridad, traducir texto a inglés y añadir la barra de navegación y los estilos | [URL_commit_2](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/67f36d6fa3cb1e27e31a7d03849a56761bce0dd5)   |
+|3| Añadir clases a la página de perfil, añadir los comentarios y formulario de comentarios a la página de clase. Arreglar error en el footer de la página de error| [URL_commit_3](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/acc628c304f265b63b5015f04a33179692745cff)   |
+|4| Cambio de las páginas de perfil y clase para usar bootstrap 5.3.0 desde 3.1.0 para que sea el mismo que en el resto de páginas  | [URL_commit_4](https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/ddd31013202ae15e6f9b98f94bd6f21a16923ae1)   |
+|5| Editar todos los CSS para eliminar su estilo de barra de navegación individual y crear un CSS independiente para el estiñp de la barra de navegación, añadir ese estilo a todos los html para que tenga el mismo estilo en todas las páginas | [URL_commit_5]https://github.com/CodeURJC-DAW-2025-26/practica-daw-2025-26-grupo-17/commit/bfdc7243029c22a771aebebb24f74129dc8a5ab8#diff-182b27b78e79493cae10e5617c7d775b441aa85e0a24c6940938a8d49eeac3f1 |
 
 ---
 
