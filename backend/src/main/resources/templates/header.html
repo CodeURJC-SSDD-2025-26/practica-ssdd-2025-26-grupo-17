@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="/assets/images/icono.ico" />
+
+    <!-- CSS OF THE LOGIN PAGE-->
+    {{#cssLogin}}
+       <title>Login / Register</title>
+    <link rel="stylesheet" href="/styles/loginCSS.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    {{/cssLogin}}
+    <link rel="stylesheet" href="/styles/headerCSS.css" />
+    <link rel="stylesheet" href="/styles/footerCSS.css" />
+
+    <!-- CSS OF THE ADMIN PAGE-->
+    {{#cssAdmin}}
+    <title>Administrator panel - NexGym</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/styles/adminCSS.css" />
+
+    {{/cssAdmin}} {{#cssIndex}}
+    <title>Nexgym</title>
+
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/styles/indexCSS.css" rel="stylesheet" />
+    <link href="/styles/footerCSS.css" rel="stylesheet" />
+    <link href="/styles/headerCSS.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    {{/cssIndex}}
+
+    <!-- CSS OF THE PROFILE PAGE-->
+    {{#cssProfile}}
+    <title>Profile</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="stylesheet" href="/styles/profileCSS.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    {{/cssProfile}}
+
+    <!-- CSS OF THE PROFILEADMIN PAGE-->
+
+    {{#cssProfileAdmin}}
+    <title>User Profile</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="/styles/profileAdminCSS.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/footerCSS.css" />
+    {{/cssProfileAdmin}} {{#cssClass}}
+    <title>Class Details - NexGym</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/styles/classCSS.css" />
+    {{/cssClass}} {{#cssNewClass}}
+    <title>Edit Class - NexGym</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/styles/newclassCSS.css" />
+    {{/cssNewClass}} {{#cssError}}
+    <title>Error page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/errorCSS.css" />
+    <link rel="stylesheet" href="/styles/footerCSS.css" />
+    <link rel="stylesheet" href="/styles/headerCSS.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    {{/cssError}}
+  </head>
+  <!-- HEAD END-->
+
+  <body id="page-top" {{#cssProfile}}class="page"{{/cssProfile}}>
+    <!-- NAV BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/"
+          ><img src="/assets/images/Without_back_logo.png" alt="Nexgym"
+        /></a>
+        <!-- NAV BUTTONS FOR THE ADMIN PAGE-->
+        {{#cssAdmin}}
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/profile/profileAdmin">SETTINGS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <form method="POST" action="/logout" style="display:inline">
+                <input type="hidden" name="_csrf" value="{{token}}" />
+                <button type="submit" class="nav-link btn btn-link p-0">Log out</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+        {{/cssAdmin}} {{#cssLogin}}
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">HOME PAGE</a>
+            </li>
+          </ul>
+        </div>
+        {{/cssLogin}}
+
+        <!-- NAV BUTTONS FOR THE PROFILE PAGE-->
+        {{#cssProfile}}
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/profile/profileAdmin">Settings</a>
+            </li>
+            <li class="nav-item">
+              <form method="POST" action="/logout" style="display:inline">
+                <input type="hidden" name="_csrf" value="{{token}}" />
+                <button type="submit" class="nav-link btn btn-link p-0">Log out</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+        {{/cssProfile}}
+
+        <!-- NAV BUTTONS FOR THE PROFILEADMIN PAGE-->
+        {{#cssProfileAdmin}}
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">Profile Page</a>
+            </li>
+            <li class="nav-item">
+              <form method="POST" action="/logout" style="display:inline">
+                <input type="hidden" name="_csrf" value="{{token}}" />
+                <button type="submit" class="nav-link btn btn-link p-0">Log out</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+        {{/cssProfileAdmin}} {{#cssClass}}
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sessions">Sessions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#comments">Comments</a>
+            </li>
+          </ul>
+        </div>
+        {{/cssClass}} {{#cssNewClass}}
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/admin">ADMIN PAGE</a>
+            </li>
+            <li class="nav-item">
+              <form method="POST" action="/logout" style="display:inline">
+                <input type="hidden" name="_csrf" value="{{token}}" />
+                <button type="submit" class="nav-link btn btn-link p-0">LOG OUT</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+        {{/cssNewClass}} {{#cssError}}
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home page</a>
+            </li>
+            <li class="nav-item">
+              <form method="POST" action="/logout" style="display:inline">
+                <input type="hidden" name="_csrf" value="{{token}}" />
+                <button type="submit" class="nav-link btn btn-link p-0">Log out</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+        {{/cssError}}
+
+        <!-- NAV BUTTONS FOR THE INDEX PAGE-->
+        {{#cssIndex}}
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#info">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#location">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#classes">Classes</a>
+            </li>
+            {{#logged}}
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">Profile</a>
+            </li>
+            {{#admin}}
+            <li class="nav-item">
+              <a class="nav-link" href="/admin">Admin</a>
+            </li>
+            {{/admin}}
+            <li class="nav-item">
+              <form method="POST" action="/logout" style="display:inline">
+                <input type="hidden" name="_csrf" value="{{token}}" />
+                <button type="submit" class="nav-link btn btn-link p-0">Log out</button>
+              </form>
+            </li>
+            {{/logged}}
+            {{^logged}}
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Log in</a>
+            </li>
+            {{/logged}}
+          </ul>
+        </div>
+        {{/cssIndex}}
+      </div>
+    </nav>

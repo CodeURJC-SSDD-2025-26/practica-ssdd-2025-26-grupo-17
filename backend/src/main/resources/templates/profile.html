@@ -1,0 +1,122 @@
+{{>header}}
+
+<main class="container">
+  <!-- PROFILE + ACTIVITY -->
+  <div class="row">
+    <!-- PROFILE -->
+    <div class="col-md-4">
+      <div class="session-card text-center">
+        {{#user}} {{#image}}
+        <img src="/images/{{id}}" class="img-circle mb-3" alt="Profile" />
+        {{/image}} {{^image}}
+        <img
+          src="/assets/images/personal-trainer-3.png"
+          class="img-circle mb-3"
+          alt="Profile" />
+        {{/image}}
+        <h3>{{name}} {{surname}}</h3>
+        <p class="text-muted mb-1" name="text">{{email}}</p>
+        {{#birthdate}}
+        <p class="text-muted mb-1" name="text">Birthdate: {{birthdate}}</p>
+        {{/birthdate}} {{#phone}}
+        <p class="text-muted" name="text">Phone: {{phone}}</p>
+        {{/phone}} {{/user}}
+      </div>
+    </div>
+
+    <!-- ACTIVITY -->
+    <div class="col-md-8">
+      <div class="session-card">
+        <h3>Activity</h3>
+
+        <div class="row">
+          <div class="col-10 col-md-4">
+            <p>Classes in the last 30 days:</p>
+            <div
+              style="
+                position: center;
+                width: 100%;
+                max-width: 220px;
+                margin: 0 auto;
+              ">
+              <canvas id="classDistributionChart"></canvas>
+              <p
+                id="noActivityMsg"
+                class="text-muted small text-center mt-2"
+                style="display: none">
+                No activity in the last 30 days.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLASSES -->
+  <div class="row g-4 mt-4">
+    {{#sessions}}
+    <div class="col-md-6 col-lg-4">
+      <div class="class-card h-100">
+        <a href="/class/{{gymClass.id}}" class="class-card-link">
+          <div class="class-card-body">
+            <div class="d-flex justify-content-between mb-3">
+              <span class="badge bg-warning">Session</span>
+              <span class="text-muted small">{{timeFormatted}}</span>
+            </div>
+            <h4 class="class-card-title">{{gymClass.name}}</h4>
+            <p class="class-card-text">{{gymClass.description}}</p>
+            <p class="class-schedule">
+              Date: {{dateFormatted}} {{timeFormatted}}
+            </p>
+            <div class="p-3 pt-0">
+              <form method="POST" action="/session/{{id}}/cancel">
+                <input type="hidden" name="_csrf" value="{{token}}" />
+                <input type="hidden" name="from" value="profile" />
+                <button
+                  type="submit"
+                  class="btn btn-outline-danger btn-sm w-100">
+                  Cancel enrollment
+                </button>
+              </form>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    {{/sessions}} {{^sessions}}
+    <p class="text-muted">No upcoming classes.</p>
+    {{/sessions}}
+  </div>
+
+  <!-- SUGGESTED CLASSES -->
+  <div class="row g-4 mt-4" id="suggested-classes">
+    <h2>Suggested classes:</h2>
+    {{#suggestedClasses}}
+    <div class="col-md-6 col-lg-4">
+      <a href="/class/{{id}}" class="class-card-link">
+        <div class="class-card h-100">
+          <div class="class-card-body">
+            <div class="d-flex justify-content-between mb-3">
+              <span class="badge bg-light">Class</span>
+              <span class="text-muted small">Trainer: {{coachName}}</span>
+            </div>
+            <h4 class="class-card-title">{{name}}</h4>
+            <p class="class-card-text">{{description}}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    {{/suggestedClasses}} {{^suggestedClasses}}
+    <p class="text-muted">No suggested classes yet.</p>
+    {{/suggestedClasses}}
+  </div>
+</main>
+
+<script>
+  const classDistribution = {{{classDistributionJson}}};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/js/profile.js"></script>
+
+{{>footer}}

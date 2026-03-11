@@ -1,0 +1,94 @@
+{{>header}}
+<main class="admin-main">
+  <div class="content-area">
+    <section class="content-section active">
+      <h2>{{#isEdit}}Edit Class{{/isEdit}}{{^isEdit}}Add Class{{/isEdit}}</h2>
+      <form
+        class="add-form"
+        id="new-class-form"
+        method="post"
+        action="{{formAction}}"
+        enctype="multipart/form-data">
+        <input type="hidden" name="_csrf" value="{{token}}" />
+        <div class="form-row">
+          <label for="class-name">
+            Name
+            <input
+              type="text"
+              id="class-name"
+              name="name"
+              placeholder="Enter class name"
+              value="{{name}}"
+              required />
+          </label>
+          <label for="class-trainer">
+            Trainer
+            <input
+              type="text"
+              id="class-trainer"
+              name="coachName"
+              placeholder="Enter trainer name"
+              value="{{coachName}}"
+              required />
+          </label>
+        </div>
+        <div class="form-row">
+          <label for="class-description">
+            Description
+            <textarea
+              id="class-description"
+              name="description"
+              rows="4"
+              placeholder="Enter a short description"
+              required>
+{{description}}</textarea
+            >
+          </label>
+          <label for="class-photos">
+            Images
+            <input
+              type="file"
+              id="class-photos"
+              name="imageFiles"
+              multiple
+              accept="image/*" />
+            <span class="file-hint">You can select four images</span>
+          </label>
+        </div>
+        <div class="form-row full">
+          <div class="images-preview-container">
+            <label>Selected Images</label>
+            <div id="images-preview" class="images-preview"></div>
+          </div>
+        </div>
+        <div class="form-row full">
+          <div class="schedule-field">
+            <label for="class-schedule">Schedule</label>
+            <div id="existing-sessions" class="visually-hidden">
+              {{#sessions}}
+              <input
+                type="hidden"
+                class="existing-session"
+                data-date="{{date}}" />
+              {{/sessions}}
+            </div>
+            <div class="schedule-builder" id="schedule-builder"></div>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">
+            {{#isEdit}}Save changes{{/isEdit}}{{^isEdit}}Add{{/isEdit}}
+          </button>
+          <button
+            class="btn btn-secondary"
+            type="button"
+            onclick="window.location.href = '/admin'">
+            Cancel
+          </button>
+        </div>
+      </form>
+    </section>
+  </div>
+</main>
+<script src="/js/newClass.js"></script>
+{{>footer}}

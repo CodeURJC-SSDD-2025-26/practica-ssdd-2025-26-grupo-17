@@ -1,0 +1,103 @@
+{{>header}}
+
+<div class="auth-wrapper">
+<div class="auth-container">
+  <ul class="tabs">
+    <li class="tab active" data-target="login">Login</li>
+    <li class="tab" data-target="register">Register</li>
+  </ul>
+
+  <div class="forms">
+    <!-- LOGIN FORM -->
+    <form id="login" class="form active" action="/login" method="post">
+      <input type="hidden" name="_csrf" value="{{token}}" />
+      <h2 class="form-title">Login</h2>
+
+      <div class="form-group">
+        <label for="login-email">Email</label>
+        <input type="email" name="email" id="login-email" placeholder="Email" />
+      </div>
+
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="login-password"
+          placeholder="Password" />
+      </div>
+
+      <button type="submit" class="btn primary">Login</button>
+
+      {{#loginError}}
+      <span class="form-group">
+        <label for="login-email">Invalid email or password</label>
+      </span>
+      {{/loginError}}
+    </form>
+
+    <!-- REGISTER FORM -->
+    <form id="register" class="form" action="/register" method="post">
+      <input type="hidden" name="_csrf" value="{{token}}" />
+      <h2 class="form-title">Register</h2>
+
+      <div class="form-group">
+        <label for="reg-name">Name</label>
+        <input
+          type="text"
+          id="reg-name"
+          name="name"
+          placeholder="Name"
+          required />
+      </div>
+
+      <div class="form-group">
+        <label for="reg-surname">Surname</label>
+        <input
+          type="text"
+          id="reg-surname"
+          name="surname"
+          placeholder="Surname"
+          required />
+      </div>
+
+      <div class="form-group">
+        <label for="reg-email">Email</label>
+        <input
+          type="email"
+          id="reg-email"
+          name="email"
+          placeholder="Email"
+          required />
+      </div>
+
+      <div class="form-group">
+        <label for="reg-email2">Confirm Email</label>
+        <input type="email" id="reg-email2" placeholder="Confirm Email" />
+      </div>
+
+      {{#errorEmail}}
+      <span class="form-group">
+        <label for="reg-email">Email already in use</label>
+      </span>
+      {{/errorEmail}}
+
+      <div class="form-group">
+        <label for="reg-pass">Password</label>
+        <input
+          type="password"
+          id="reg-pass"
+          name="password"
+          placeholder="Password"
+          required />
+      </div>
+
+      <button type="submit" class="btn primary">Register</button>
+    </form>
+  </div>
+</div>
+</div>
+
+<script src="/js/appLogin.js"></script>
+
+{{>footer}}

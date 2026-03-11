@@ -1,0 +1,28 @@
+{{#classes}}
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow-sm border-0">
+    <a href="/class/{{id}}" class="text-decoration-none">
+      {{#images}} {{#isFirst}}
+      <div class="px-3 pt-3">
+        <img
+          src="/images/{{id}}"
+          alt="{{name}}"
+          class="img-fluid rounded"
+          style="height: 200px; object-fit: cover; width: 100%" />
+      </div>
+      {{/isFirst}} {{/images}}
+    </a>
+    <div class="card-body p-4">
+      <h4 class="card-title fw-bold">{{name}}</h4>
+
+      <span class="badge bg-dark mb-2">Coach: {{coachName}}</span>
+      <p class="card-text text-muted">{{description}}</p>
+      <a href="/class/{{id}}" class="btn btn-sm btn-warning fw-bold"
+        >View class</a
+      >
+    </div>
+  </div>
+</div>
+{{/classes}} {{^hasMore}}
+<div id="end-of-list-signal" style="display: none"></div>
+{{/hasMore}}

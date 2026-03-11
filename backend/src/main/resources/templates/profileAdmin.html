@@ -1,0 +1,138 @@
+{{>header}}
+
+    <main class="profile-admin container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-4">
+          <div class="profile-card text-center">
+            {{#user.image}}
+            <img
+              src="/images/{{id}}"
+              alt="User profile"
+              class="profile-image" />
+            {{/user.image}}
+            {{^user.image}}
+            <img
+              src="../static/assets/images/personal-trainer-2.png"
+              alt="User profile"
+              class="profile-image" />
+            {{/user.image}}
+            <h2 class="profile-name">{{user.name}} {{user.surname}}</h2>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="form-card">
+            <div class="form-header">
+              <h2>Edit profile</h2>
+              <p>Update the details below.</p>
+            </div>
+
+            <form class="row g-3" method="post" action="{{formAction}}" enctype="multipart/form-data">
+              <input type="hidden" name="id" value="{{user.id}}" />
+              <input type="hidden" name="_csrf" value="{{token}}" />
+              <div class="col-md-6">
+                <label class="form-label" for="admin-name">First name</label>
+                <input
+                  class="form-control"
+                  id="admin-name"
+                  name="name"
+                  type="text"
+                  placeholder="First name"
+                  value="{{user.name}}" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="admin-surname">Last name</label>
+                <input
+                  class="form-control"
+                  id="admin-surname"
+                  name="surname"
+                  type="text"
+                  placeholder="Last name"
+                  value="{{user.surname}}" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="admin-email">Email</label>
+                <input
+                  class="form-control"
+                  id="admin-email"
+                  name="email"
+                  type="email"
+                  placeholder="admin@nexgym.com"
+                  value="{{user.email}}" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="admin-phone">Phone</label>
+                <input
+                  class="form-control"
+                  id="admin-phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="+34 600 000 000"
+                  value="{{user.phone}}" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="admin-birth">Birth date</label>
+                <input
+                  class="form-control"
+                  id="admin-birth"
+                  name="birthdate"
+                  type="date"
+                  value="{{user.birthdate}}" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="admin-photo"
+                  >Profile photo</label
+                >
+                <div class="file-upload">
+                  <input
+                    class="visually-hidden"
+                    id="admin-photo"
+                    name="imageFile"
+                    type="file"
+                    accept="image/*" />
+                  <label class="file-button" for="admin-photo"
+                    >Select file</label
+                  >
+                  <span class="file-name" id="file-name-display">No file selected</span>
+                </div>
+                <script>
+                  document.getElementById('admin-photo').addEventListener('change', function() {
+                    var fileName = this.files.length > 0 ? this.files[0].name : 'No file selected';
+                    document.getElementById('file-name-display').textContent = fileName;
+                  });
+                </script>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="admin-password">Change Password</label>
+                <input
+                  class="form-control"
+                  id="admin-password"
+                  name="password"
+                  type="password"
+                  placeholder="Enter your new password" />
+              </div>
+
+              <div class="col-12 form-actions">
+                <button class="btn btn-primary" type="submit">
+                  Save changes
+                </button>
+              </div>
+            </form>
+            <div class="col-12 form-actions mt-3">
+              <form method="post" action="{{deleteAction}}" style="display:inline;">
+                <input type="hidden" name="_csrf" value="{{token}}" />
+                <button class="btn btn-danger" type="submit">
+                  Delete account
+                </button>
+              </form>
+              <a class="btn btn-outline-light" href="{{cancelUrl}}">
+                Cancel
+              </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+{{>footer}}
